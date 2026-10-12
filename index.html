@@ -1,0 +1,1640 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>New Orleans Interior &amp; Exterior Painting Contractor | Big Easy Painting</title>
+<meta name="description" content="Big Easy Painting provides interior and exterior painting for homes and businesses across greater New Orleans. Licensed, insured, and free estimates on site or remote.">
+<link rel="icon" href="https://www.bigeasypainting.com/wp-content/uploads/2022/07/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+/* ===== Tokens ===== */
+:root{
+  /* Unified "Warm Gallery" theme: charcoal, ivory, brass, oxblood.
+     Bright paint colors only appear as paint (house chips, room swatches, town dots). */
+  --black:#141210; --ink:#1D1A17; --ink-2:#4F4840; --ink-3:#7D7569; --stone:#A79E90; --stone-2:#CFC6B9;
+  --primer:#F2EDE4; --paper:#FAF7F1; --cloth:#ECE4D6;
+  --brass:#C9A35B; --brass-2:#E2C58A; --ox:#6E2B2B; --ox-2:#58211F;
+  /* legacy names from Option A, now pointing at the theme colors */
+  --teal:var(--ox); --teal-2:var(--brass); --coral:var(--ox); --coral-2:var(--ox-2); --marigold:var(--brass);
+  --mint:var(--stone-2); --blush:var(--stone-2); --lilac:var(--stone-2); --creole:var(--ink); --cream:var(--primer);
+  --line:rgba(29,26,23,.13); --line-d:rgba(242,237,228,.14);
+  --serif:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --sans:"Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono:"Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --wrap:1240px; --gut:clamp(16px,4vw,40px); --r:14px;
+  /* house scheme (changed by the color picker) */
+  --body:#A8D5BA; --trim:#FBF7EE; --shutter:#1F5C5A; --door:#D9583B;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--primer);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.04;margin:0;letter-spacing:-.01em}
+p{margin:0 0 1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);display:inline-flex;align-items:center;gap:10px;margin-bottom:18px}
+.eyebrow::before{content:"";width:22px;height:8px;border-radius:2px;background:var(--coral)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:600;font-size:16px;text-decoration:none;border-radius:999px;padding:15px 26px;border:2px solid transparent;cursor:pointer;transition:transform .2s ease, background .2s ease, color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-coral{background:var(--coral);color:#fff}
+.btn-coral:hover{background:var(--coral-2)}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.btn svg{width:18px;height:18px}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px}
+
+/* ===== Header ===== */
+
+header.site{position:sticky;top:0;z-index:50;background:rgba(243,238,228,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-logo{height:58px;width:auto}
+.logo-plate{display:inline-block;background:#fff;border-radius:12px;padding:8px 12px}
+.logo-plate img{height:64px;width:auto}
+
+
+.menu{display:flex;align-items:center;gap:28px;list-style:none;margin:0;padding:0}
+.menu a{text-decoration:none;font-weight:500;font-size:15.5px;position:relative}
+.menu a::after{content:"";position:absolute;left:0;bottom:-6px;height:3px;width:0;background:var(--coral);border-radius:3px;transition:width .25s}
+.menu a:hover::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:18px}
+.nav-phone{font-family:var(--mono);font-weight:600;font-size:14.5px;text-decoration:none;white-space:nowrap}
+.nav-cta .btn{padding:11px 20px;font-size:15px}
+.burger{display:none;background:none;border:2px solid var(--ink);border-radius:10px;width:46px;height:42px;cursor:pointer;padding:0}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);margin:4px auto;transition:transform .25s, opacity .25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* ===== Hero: Pexels video background, Option D copy, Option A shotgun picker ===== */
+.hero{position:relative;overflow:hidden;color:#F2EDE4;padding:clamp(56px,7vw,110px) 0 clamp(64px,8vw,120px);min-height:min(92vh,920px);display:flex;align-items:center;
+  background:#141210 url("https://images.pexels.com/videos/6474363/pexels-photo-6474363.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover no-repeat}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% center;z-index:0}
+.hero-shade{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(90deg,rgba(20,18,16,.82) 0%,rgba(20,18,16,.62) 40%,rgba(20,18,16,.18) 72%,rgba(20,18,16,.08) 100%),linear-gradient(0deg,rgba(20,18,16,.45) 0%,transparent 35%)}
+.hero > .wrap{position:relative;z-index:2;width:100%}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,70px);align-items:center}
+.hero-over{display:flex;align-items:center;gap:14px;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#C9A35B;margin-bottom:22px}
+.hero-over::before{content:"";width:36px;height:1px;background:#C9A35B;flex:none}
+.hero h1{font-size:clamp(48px,6.4vw,96px);color:#F2EDE4;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.hero h1 em{color:#C9A35B;font-style:italic}
+.hero-lead{font-size:clamp(17px,1.4vw,18.5px);color:#E9E2D6;text-shadow:0 1px 12px rgba(0,0,0,.4);max-width:540px;margin:28px 0 36px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+.btn-d{display:inline-flex;align-items:center;gap:12px;font:600 14px var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:17px 30px;border:1px solid #C9A35B;border-radius:0;cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.btn-d svg{width:16px;height:16px}
+.btn-d.brass{background:#C9A35B;color:#141210}
+.btn-d.brass:hover{background:#E2C58A;border-color:#E2C58A}
+.btn-d.line{background:rgba(20,18,16,.25);color:#F2EDE4}
+.btn-d.line:hover{background:#C9A35B;color:#141210}
+.video-toggle{position:absolute;left:clamp(16px,3vw,32px);bottom:clamp(16px,3vw,28px);z-index:3;display:inline-flex;align-items:center;gap:8px;background:rgba(20,18,16,.55);color:#F2EDE4;border:1px solid rgba(242,237,228,.35);border-radius:999px;padding:8px 14px;font:600 12px var(--sans);letter-spacing:.08em;cursor:pointer;backdrop-filter:blur(6px)}
+.video-toggle:hover{border-color:#C9A35B;color:#E2C58A}
+.video-toggle svg{width:14px;height:14px}
+.video-credit{position:absolute;left:calc(clamp(16px,3vw,32px) + 138px);bottom:clamp(16px,3vw,28px);z-index:3;font:500 11px var(--sans);color:rgba(242,237,228,.5);letter-spacing:.04em}
+
+.studio{color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:22px 22px 18px;box-shadow:0 30px 60px -30px rgba(29,26,23,.35);position:relative}
+.studio-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
+.studio-head h2{font-size:28px}
+.studio-head .code{font-family:var(--mono);font-size:12px;color:var(--ink-3)}
+.house-stage{border-radius:14px;background:linear-gradient(#DCEBF0,#F4EFE6 78%);position:relative;overflow:hidden;aspect-ratio:1/0.92}
+.house-stage .sun{position:absolute;width:90px;height:90px;border-radius:50%;background:#F7D58A;top:22px;right:28px;opacity:.75}
+.house-stage svg{position:absolute;inset:auto 0 0 0;width:100%;height:100%}
+.house-stage .h-body{fill:var(--body)}
+.house-stage .h-trim{fill:var(--trim)}
+.house-stage .h-trim-s{stroke:var(--trim)}
+.house-stage .h-shut{fill:var(--shutter)}
+.house-stage .h-door{fill:var(--door)}
+.house-stage .h-body,.house-stage .h-trim,.house-stage .h-shut,.house-stage .h-door{transition:fill .7s ease}
+.house-stage .h-trim-s{transition:stroke .7s ease}
+.now{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:14px 2px 12px;font-size:14px}
+.now strong{font-family:var(--serif);font-size:24px;font-weight:400}
+.now .code{font-family:var(--mono);font-size:12px;color:var(--ink-3)}
+.chips{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.chip{border:2px solid transparent;border-radius:10px;padding:0;background:#fff;cursor:pointer;overflow:hidden;box-shadow:0 1px 0 var(--line);transition:transform .2s, border-color .2s}
+.chip:hover{transform:translateY(-3px)}
+.chip[aria-pressed="true"]{border-color:var(--ink);transform:translateY(-3px)}
+.chip span{display:block;height:20px}
+.chip span:first-child{height:34px}
+.studio-note{font-size:12.5px;color:var(--ink-3);margin:12px 2px 0}
+
+/* ===== Tape strip ===== */
+.tape{background:var(--ink);padding:26px 0;overflow:hidden;position:relative}
+.tape-track{display:flex;gap:26px;width:max-content;animation:slide 38s linear infinite}
+.tape:hover .tape-track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+.tape-piece{background:#E9DFC6;color:var(--ink);font-family:var(--mono);font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:11px 22px;white-space:nowrap;clip-path:polygon(2% 0,98% 4%,100% 50%,98% 100%,3% 96%,0 50%);transform:rotate(-1.2deg)}
+.tape-piece:nth-child(even){transform:rotate(1deg);background:#F1E8D2}
+.tape-piece b{color:var(--coral)}
+
+/* ===== Drips ===== */
+.drip{display:block;width:100%;height:56px;margin:-1px 0;position:relative;z-index:1}
+
+/* ===== Services: fan deck ===== */
+
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:44px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(34px,4.6vw,60px);max-width:700px}
+.sec-head p{max-width:420px;color:var(--ink-2);margin:0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Services: Option D collection + A icons + photos ===== */
+.collection{padding:clamp(80px,10vw,140px) 0;background:#1D1A17;color:#F2EDE4}
+.coll-over{display:flex;align-items:center;gap:14px;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#C9A35B;margin-bottom:22px}
+.coll-over::before{content:"";width:36px;height:1px;background:#C9A35B;flex:none}
+.coll-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+.coll-head h2{font-size:clamp(42px,5.4vw,78px)}
+.coll-head p{color:#A79E90;max-width:420px;margin:0}
+.coll-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,70px);align-items:start}
+.idx-group{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#C9A35B;margin:0 0 6px;padding-top:6px}
+.idx-group + ul{margin-bottom:34px}
+.idx{list-style:none;margin:0;padding:0}
+.idx a{display:grid;grid-template-columns:54px 1fr auto;gap:12px;align-items:center;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(242,237,228,.1);transition:color .25s,padding .25s}
+.idx .ic{width:38px;height:38px;display:grid;place-items:center;border:1px solid rgba(242,237,228,.18);border-radius:50%;color:#A79E90;transition:color .25s,border-color .25s,background .25s}
+.idx .ico{width:20px;height:20px}
+.idx h3{font-size:clamp(26px,2.5vw,36px)}
+.idx .ar{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#7D7569;opacity:0;transition:opacity .25s}
+.idx-thumb{display:none}
+.idx a:hover,.idx a:focus-visible,.idx a.on{color:#C9A35B;padding-left:10px}
+.idx a:hover .ic,.idx a:focus-visible .ic,.idx a.on .ic{color:#141210;background:#C9A35B;border-color:#C9A35B}
+.idx a:hover .ar,.idx a.on .ar,.idx a:focus-visible .ar{opacity:1;color:#C9A35B}
+.panel{position:sticky;top:120px}
+.panel-media{aspect-ratio:4/3.3;position:relative;overflow:hidden;background:#2A2622}
+.panel-media img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .35s ease}
+.panel-media img.fade{opacity:0}
+.panel-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,16,.35),transparent 35%);pointer-events:none}
+.panel-ic{position:absolute;left:20px;top:20px;z-index:1;width:56px;height:56px;border-radius:50%;background:#C9A35B;color:#141210;display:grid;place-items:center}
+.panel-ic .ico{width:28px;height:28px}
+.panel .info{background:#F2EDE4;color:#141210;padding:24px 26px 26px}
+.panel .info h3{font-size:34px;margin-bottom:8px}
+.panel .info p{color:#5A534A;margin:0 0 16px;min-height:3.3em}
+.panel .info a{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#6E2B2B;text-decoration:none;border-bottom:1px solid #6E2B2B;padding-bottom:3px}
+
+/* ===== Room Study (from Option D) ===== */
+.room{--rwall:#8FA58A;--rtrim:#FAFAF7;background:#F2EDE4;color:#141210;padding:clamp(24px,3vw,40px) 0 clamp(80px,10vw,140px)}
+.room-over{display:flex;align-items:center;gap:14px;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#6E2B2B;margin-bottom:22px}
+.room-over::before{content:"";width:36px;height:1px;background:#6E2B2B;flex:none}
+.room-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(30px,5vw,70px);align-items:center}
+.room h2{font-size:clamp(42px,5vw,72px)}
+.room-copy p{color:#5A534A;margin:22px 0 30px;font-size:17px}
+.room-stage{background:#fff;padding:14px;box-shadow:0 30px 60px -36px rgba(20,18,16,.55)}
+.room-stage svg{width:100%;height:auto;display:block}
+.room-stage .rm-wall{fill:var(--rwall);transition:fill .8s ease}
+.room-stage .rm-trim{fill:var(--rtrim);transition:fill .8s ease}
+.room-picker h3{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#7D7569;margin:0 0 12px}
+.rsw-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.rsw{width:54px;height:54px;border-radius:50%;border:1px solid rgba(20,18,16,.18);cursor:pointer;padding:0;position:relative;transition:transform .2s}
+.rsw:hover{transform:scale(1.08)}
+.rsw[aria-pressed="true"]{box-shadow:0 0 0 3px #F2EDE4,0 0 0 5px #141210}
+.room-now{border-top:1px solid #D8CFBF;padding-top:16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.room-now span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7D7569}
+.room-now strong{display:block;font-family:var(--serif);font-weight:400;font-size:26px;letter-spacing:0;text-transform:none;color:#141210}
+.room-note{font-size:13px;color:#7D7569;margin-top:16px}
+
+/* ===== Prep ===== */
+.prep{background:var(--ink);color:var(--primer);padding:clamp(70px,9vw,120px) 0 clamp(80px,10vw,130px);position:relative}
+.prep .eyebrow{color:#B7AC9E}
+.prep .eyebrow::before{background:var(--marigold)}
+.prep-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.prep h2{font-size:clamp(34px,4.6vw,62px)}
+.prep h2 em{font-style:italic;font-weight:400;color:var(--marigold)}
+.prep-lead{color:#CFC6B9;font-size:18px;margin:24px 0 34px;max-width:520px}
+.threats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.threat{border:1px solid rgba(243,238,228,.16);border-radius:12px;padding:16px}
+.threat h3{font-size:19px;margin-bottom:6px;color:#fff}
+.threat p{font-size:14px;color:#B7AC9E;margin:0;line-height:1.5}
+.layers{display:flex;flex-direction:column-reverse;gap:8px}
+.layer{display:flex;justify-content:space-between;align-items:center;padding:0 22px;height:64px;border-radius:8px;color:var(--ink);transform-origin:left center;transform:scaleX(.06);opacity:.2;transition:transform .9s cubic-bezier(.6,.05,.2,1), opacity .5s}
+.layer h3{font-family:var(--sans);font-size:16.5px;font-weight:700;letter-spacing:0}
+.layer .n{font-family:var(--mono);font-size:12.5px;opacity:.75}
+.layers.in .layer{transform:scaleX(1);opacity:1}
+.layers.in .layer:nth-child(2){transition-delay:.15s}
+.layers.in .layer:nth-child(3){transition-delay:.3s}
+.layers.in .layer:nth-child(4){transition-delay:.45s}
+.layers.in .layer:nth-child(5){transition-delay:.6s}
+.layer.l1{background:#8C8173;color:#fff}
+.layer.l2{background:#B9AE9E}
+.layer.l3{background:#DDD3C3}
+.layer.l4{background:#F5F0E6}
+.layer.l5{background:var(--teal-2);color:#fff}
+.layers-cap{font-family:var(--mono);font-size:12px;color:#8E8578;margin-top:14px;letter-spacing:.06em;text-transform:uppercase}
+
+/* ===== Process ===== */
+.process{padding:clamp(70px,9vw,120px) 0}
+.roller{position:relative;margin:56px 0 0}
+.roller-bar{position:absolute;left:0;top:26px;height:30px;width:100%;background:var(--coral);border-radius:4px;clip-path:polygon(0 18%,3% 0,30% 10%,55% 2%,80% 12%,100% 4%,100% 82%,76% 100%,48% 88%,22% 100%,0 86%);transform-origin:left;transform:scaleX(0);transition:transform 1.6s cubic-bezier(.6,.05,.2,1)}
+.roller.in .roller-bar{transform:scaleX(1)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;position:relative}
+.step-n{width:82px;height:82px;border-radius:50%;background:var(--paper);border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--serif);font-size:30px;font-weight:400;margin-bottom:24px;position:relative;z-index:1}
+.step h3{font-size:24px;margin-bottom:10px}
+.step p{color:var(--ink-2);font-size:15.5px}
+.step .tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);display:block;margin-bottom:8px}
+
+/* ===== Work: Option C field photos (fonts follow Option D) ===== */
+.fp{background:#F5F2EA;padding:clamp(70px,9vw,120px) 0;overflow:hidden}
+.fp-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:56px}
+.fp-head h2{font-size:clamp(42px,5.4vw,76px);max-width:780px}
+.fp-head p{max-width:420px;color:#4A5566;margin:0}
+.fp-tag{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px;color:#4A5566}
+.fp-tag b{background:#3D8BD4;color:#fff;padding:4px 9px;font-weight:700;transform:rotate(-1.5deg);display:inline-block}
+.fp-board{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;align-items:start}
+.fp-pin{background:#fff;padding:12px 12px 16px;margin:0;box-shadow:0 18px 30px -20px rgba(20,32,46,.55);position:relative;transition:transform .35s ease}
+.fp-pin:nth-child(1){transform:rotate(-2deg)}
+.fp-pin:nth-child(2){transform:rotate(1.5deg);margin-top:40px}
+.fp-pin:nth-child(3){transform:rotate(-1deg)}
+.fp-pin:nth-child(4){transform:rotate(2deg);margin-top:30px}
+.fp-pin::before,.fp-pin::after{content:"";position:absolute;width:70px;height:22px;background:rgba(61,139,212,.85);top:-10px;z-index:1}
+.fp-pin::before{left:-14px;transform:rotate(-35deg)}
+.fp-pin::after{right:-14px;transform:rotate(35deg)}
+.fp-pin img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;display:block}
+.fp-pin figcaption{padding-top:12px}
+.fp-pin h3{font-size:26px}
+.fp-pin small{font-family:var(--sans);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#4A5566}
+.fp-stamp{position:absolute;right:14px;top:22px;border:3px solid #D2453A;color:#D2453A;font-family:var(--sans);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:3px 9px;transform:rotate(-10deg);background:rgba(255,255,255,.88)}
+.fp-foot{display:flex;justify-content:center;margin-top:56px}
+.fp-btn{display:inline-flex;align-items:center;font:600 14px var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:16px 28px;background:#14202E;color:#fff;border:1px solid #14202E;transition:background .25s,border-color .25s}
+.fp-btn:hover{background:#3D8BD4;border-color:#3D8BD4}
+
+/* ===== Reviews ===== */
+.reviews{padding:clamp(70px,9vw,120px) 0;position:relative;
+  background:
+   radial-gradient(circle at 12% 18%,rgba(217,88,59,.16) 0 18px,transparent 19px),
+   radial-gradient(circle at 15% 22%,rgba(217,88,59,.14) 0 6px,transparent 7px),
+   radial-gradient(circle at 86% 12%,rgba(31,92,90,.14) 0 26px,transparent 27px),
+   radial-gradient(circle at 82% 16%,rgba(31,92,90,.12) 0 8px,transparent 9px),
+   radial-gradient(circle at 70% 88%,rgba(232,163,61,.2) 0 22px,transparent 23px),
+   radial-gradient(circle at 24% 84%,rgba(182,166,214,.22) 0 16px,transparent 17px),
+   repeating-linear-gradient(0deg,rgba(29,26,23,.025) 0 1px,transparent 1px 4px),
+   repeating-linear-gradient(90deg,rgba(29,26,23,.025) 0 1px,transparent 1px 4px),
+   #E7DDCB}
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 28px;align-items:start}
+.note{break-inside:avoid;background:var(--paper);border-radius:6px;padding:30px 26px 24px;margin:0;position:relative;box-shadow:0 14px 30px -20px rgba(29,26,23,.5)}
+.note:nth-child(3n+1){transform:rotate(-1deg)}
+.note:nth-child(3n+2){transform:rotate(.8deg)}
+.note::before{content:"";position:absolute;top:-12px;left:50%;width:96px;height:24px;margin-left:-48px;background:rgba(233,223,198,.92);transform:rotate(-3deg);clip-path:polygon(3% 0,97% 6%,100% 100%,0 94%)}
+.stars{color:var(--marigold);letter-spacing:3px;font-size:16px;margin-bottom:12px}
+.note blockquote{margin:0 0 18px;font-family:var(--serif);font-size:19px;line-height:1.45}
+.note .sig{border-top:1.5px solid var(--ink);padding-top:6px;margin-top:34px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.note .sig h3{font-family:"Caveat","Segoe Print",cursive;font-weight:600;font-size:30px;line-height:1;letter-spacing:0;color:#12345A;margin-top:-30px;background:var(--paper);padding-right:8px}
+.note .sig small{font-family:var(--sans);font-size:11px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.12em}
+
+/* ===== Areas ===== */
+.areas{background:var(--marigold);padding:clamp(70px,9vw,120px) 0}
+.areas .eyebrow{color:var(--ink)}
+.areas .eyebrow::before{background:var(--ink)}
+.areas-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,80px);align-items:start}
+.areas h2{font-size:clamp(34px,4.6vw,60px)}
+.areas-copy p{margin:22px 0 28px;font-size:18px;max-width:440px}
+.home-base{background:var(--ink);color:var(--primer);border-radius:16px;padding:22px 24px;display:flex;gap:16px;align-items:center;max-width:440px}
+.home-base svg{width:42px;height:42px;flex:none}
+.home-base h3{font-size:22px}
+.home-base p{margin:2px 0 0;font-size:14.5px;color:#CFC6B9}
+.towns{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
+.towns a{display:inline-flex;align-items:center;gap:12px;font-family:var(--serif);font-size:clamp(22px,2.6vw,34px);font-weight:400;text-decoration:none;padding:10px 22px 10px 12px;border:2px solid var(--ink);border-radius:999px;transition:background .25s,color .25s}
+.towns a i{width:28px;height:28px;border-radius:50%;display:inline-block;border:2px solid var(--ink);flex:none;transition:transform .25s}
+.towns a:hover{background:var(--ink);color:var(--marigold)}
+.towns a:hover i{transform:scale(1.15)}
+
+.areas-right{display:flex;flex-direction:column;gap:28px}
+.areas-copy{position:sticky;top:120px}
+.cmap{margin:0;background:#1D1A17;border-radius:16px;padding:16px 16px 12px}
+.cmap .cm-svg{width:100%;height:auto;display:block}
+.cmap .cm-lake{fill:rgba(46,125,122,.45);stroke:rgba(243,238,228,.35);stroke-width:1}
+.cmap .cm-river{fill:none;stroke:#3E7FB8;stroke-width:4;opacity:.8}
+.cmap .cm-pt circle{stroke:#F3EEE4;stroke-width:2;transition:r .2s}
+.cmap .cm-pt text{font-family:var(--sans);font-size:12.5px;font-weight:600;fill:#F3EEE4}
+.cmap .cm-home circle{fill:#E8A33D;stroke:#F3EEE4;stroke-width:3;r:10}
+.cmap .cm-home text{font-family:var(--serif);font-size:17px;font-weight:400;fill:#E8A33D}
+.cmap .cm-lbl{font-family:var(--sans);font-size:10px;font-weight:600;fill:rgba(243,238,228,.55);letter-spacing:.14em}
+.cmap a.cm-pt:hover text,.cmap a.cm-pt:focus text,.cmap a.cm-pt.hot text{fill:#E8A33D}
+.cmap figcaption{font-family:var(--sans);font-size:11.5px;color:rgba(243,238,228,.6);margin-top:8px;letter-spacing:.02em}
+.towns a.hot{background:var(--ink);color:var(--marigold)}
+
+/* ===== FAQ ===== */
+.faq{padding:clamp(70px,9vw,120px) 0}
+.faq-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(30px,6vw,90px);align-items:start}
+.faq-side{position:sticky;top:110px}
+.faq-side h2{font-size:clamp(34px,4.4vw,56px)}
+.faq-side p{color:var(--ink-2);margin:20px 0 26px;max-width:380px}
+.qa{border-top:1px solid var(--line)}
+.qa:last-child{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:24px 0}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary h3{font-size:clamp(19px,1.8vw,23px)}
+.plus{width:34px;height:34px;border-radius:50%;border:2px solid var(--ink);flex:none;position:relative;transition:background .25s, transform .3s}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:var(--ink);transform:translate(-50%,-50%)}
+.plus::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .3s}
+.qa[open] .plus{background:var(--marigold);transform:rotate(180deg)}
+.qa[open] .plus::after{transform:translate(-50%,-50%) rotate(0)}
+.qa .ans{padding:0 50px 26px 0;color:var(--ink-2)}
+.qa .ans p:last-child{margin:0}
+
+/* ===== Estimate ===== */
+.estimate{background:var(--coral);color:#fff;padding:clamp(70px,9vw,120px) 0;position:relative}
+.est-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,70px);align-items:start}
+.estimate .eyebrow{color:#FFE3D9}
+.estimate .eyebrow::before{background:#fff}
+.estimate h2{font-size:clamp(36px,5vw,66px)}
+.estimate h2 em{font-style:italic;font-weight:400}
+.est-copy p{font-size:18px;color:#FFE9E1;margin:22px 0 30px;max-width:460px}
+.big-phone{display:inline-flex;flex-direction:column;text-decoration:none;border-top:2px solid rgba(255,255,255,.4);padding-top:18px}
+.big-phone small{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#FFE3D9}
+.big-phone b{font-family:var(--serif);font-size:clamp(32px,4vw,48px);font-weight:400}
+.hours{margin-top:14px;font-size:15px;color:#FFE3D9}
+form.est{background:var(--paper);color:var(--ink);border-radius:20px;padding:clamp(22px,3vw,34px);box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
+form.est h3{font-size:26px;margin-bottom:4px}
+form.est .sub{color:var(--ink-3);font-size:14.5px;margin-bottom:20px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1 / -1}
+.field label,.field legend{font-size:13.5px;font-weight:600}
+.field input,.field select,.field textarea{font:16px var(--sans);padding:13px 14px;border:1.5px solid #D6CCBC;border-radius:10px;background:#fff;color:var(--ink);width:100%}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(31,92,90,.18)}
+fieldset.field{border:0;padding:0;margin:0}
+.seg{display:flex;gap:10px}
+.seg label{flex:1;cursor:pointer;position:relative}
+.seg input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0}
+.seg span{display:block;text-align:center;padding:12px;border:1.5px solid #D6CCBC;border-radius:10px;font-weight:600;font-size:15px;background:#fff}
+.seg input:checked + span{background:var(--ink);color:#fff;border-color:var(--ink)}
+.seg input:focus-visible + span{outline:3px solid var(--marigold);outline-offset:2px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:var(--ink-3);line-height:1.5}
+.consent input{margin-top:3px;flex:none;width:16px;height:16px}
+.fine{font-size:12px;color:var(--ink-3);line-height:1.5;margin:0}
+form.est .btn{width:100%;justify-content:center;margin-top:6px}
+.form-msg{display:none;margin-top:12px;padding:12px 14px;border-radius:10px;background:#E6F1EC;color:var(--creole);font-size:14.5px}
+.form-msg.show{display:block}
+
+/* ===== Footer ===== */
+footer.site{background:var(--ink);color:#CFC6B9;padding:70px 0 34px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+
+
+footer h4{font-family:var(--mono);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8E8578;margin-bottom:16px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--marigold)}
+.foot-about{margin:18px 0 20px;max-width:340px}
+.socials{display:flex;gap:10px}
+.socials a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(243,238,228,.22);display:grid;place-items:center}
+.socials a:hover{background:var(--primer);color:var(--ink)}
+.socials svg{width:17px;height:17px;fill:currentColor}
+.foot-bottom{margin-top:56px;padding-top:24px;border-top:1px solid rgba(243,238,228,.12);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;color:#8E8578}
+
+
+
+/* ===== Mobile call bar ===== */
+.callbar{display:none}
+
+/* ===== Reveal ===== */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* ===== Responsive ===== */
+@media (max-width:1080px){
+  .menu{gap:20px}
+  .nav-phone{display:none}
+  .notes{grid-template-columns:repeat(2,1fr)}
+  .fp-board{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr);row-gap:40px}
+  .roller-bar{display:none}
+}
+@media (max-width:900px){
+  .burger{display:block}
+  .menu{position:fixed;inset:82px 0 auto 0;background:var(--primer);flex-direction:column;align-items:flex-start;gap:0;padding:8px var(--gut) 22px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .35s ease;z-index:-1}
+  .menu.open{transform:none}
+  .menu li{width:100%;border-bottom:1px solid var(--line)}
+  .menu a{display:block;padding:15px 0;font-size:18px}
+  .menu a::after{display:none}
+  .nav-cta .btn{display:none}
+  .hero-grid,.prep-grid,.areas-grid,.faq-grid,.est-grid,.room-grid,.coll-grid{grid-template-columns:1fr}
+  .areas-copy{position:static}
+  .panel{display:none}
+  .idx a{grid-template-columns:44px 1fr 96px}
+  .idx .ar{display:none}
+  .idx-thumb{display:block;width:96px;height:72px;object-fit:cover}
+  .idx a:hover,.idx a.on{padding-left:0}
+  .hero{min-height:0;padding-bottom:90px}
+  .hero-shade{background:linear-gradient(180deg,rgba(20,18,16,.62) 0%,rgba(20,18,16,.45) 40%,rgba(20,18,16,.6) 60%,rgba(29,26,23,0) 100%)}
+  .hero{background:#1D1A17}
+  .hero-video{object-position:42% center;height:min(100vh,860px);bottom:auto;-webkit-mask-image:linear-gradient(180deg,#000 72%,transparent);mask-image:linear-gradient(180deg,#000 72%,transparent)}
+  .faq-side{position:static}
+  .threats{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+  .callbar a{flex:1;justify-content:center;padding:13px 10px;font-size:15px}
+  body{padding-bottom:74px}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .nav{height:68px}
+  .menu{inset:74px 0 auto 0}
+  .brand-logo{height:48px}
+  .hero h1 em{white-space:normal}
+  .chips{grid-template-columns:repeat(3,1fr)}
+  .rsw{width:46px;height:46px}
+  .idx a{grid-template-columns:38px 1fr 76px;gap:10px}
+  .idx .ic{width:34px;height:34px}
+  .idx h3{font-size:24px}
+  .idx-thumb{width:76px;height:60px}
+  .studio-head .code{display:none}
+  .notes{grid-template-columns:1fr}
+  .fp-board{grid-template-columns:1fr;gap:40px}
+  .fp-pin:nth-child(n){margin-top:0}
+  .steps{grid-template-columns:1fr}
+  .fields{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .qa .ans{padding-right:0}
+  .towns a{padding:8px 16px 8px 9px}
+  .towns a i{width:22px;height:22px}
+  .cmap a.cm-pt text{display:none}
+  .cmap .cm-pt circle{r:10;stroke-width:3}
+  .cmap .cm-home text{font-size:26px}
+  .cmap .cm-lbl{font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+  .rv{opacity:1;transform:none}
+  .layer{transform:none;opacity:1}
+  .roller-bar{transform:none}
+}
+
+/* =====================================================================
+   UNIFIED THEME: Warm Gallery (overrides only colors, type and buttons)
+   Dark: header, hero, trust strip, Prep, Service Areas, Estimate, footer
+   Light: Services, Room Study, Process, Our Work, Reviews, FAQ
+   ===================================================================== */
+body{background:var(--primer);color:var(--ink)}
+:focus-visible{outline-color:var(--brass)}
+
+/* Header (dark, like the hero) */
+header.site{background:rgba(20,18,16,.95);border-bottom:1px solid rgba(201,163,91,.22)}
+.brand{background:var(--primer);padding:5px 10px;border-radius:2px}
+.brand-logo{height:50px}
+.menu a{color:#E7DFD1;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.menu a:hover{color:var(--brass)}
+.menu a::after{background:var(--brass);height:1px;border-radius:0}
+.nav-phone{color:var(--primer);font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:0}
+.burger{border:1px solid var(--brass);border-radius:0}
+.burger span{background:var(--brass)}
+
+/* One button system: square, uppercase. Brass = primary, outline = secondary */
+.btn{border-radius:0;font:600 14px var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:17px 30px;border:1px solid transparent}
+.btn-coral{background:var(--brass);color:var(--black);border-color:var(--brass)}
+.btn-coral:hover{background:var(--brass-2);border-color:var(--brass-2)}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--primer)}
+.nav-cta .btn{padding:12px 18px;font-size:12px}
+.fp-btn{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.fp-btn:hover{background:var(--ink);color:var(--primer);border-color:var(--ink)}
+.callbar{background:var(--black);border-top:1px solid rgba(201,163,91,.3)}
+.callbar .btn{padding:14px 8px;font-size:12px}
+.callbar .btn-light{background:transparent;color:var(--primer);border:1px solid rgba(242,237,228,.5)}
+
+/* One small-label style: thin line + spaced caps. Oxblood on light, brass on dark */
+.eyebrow,.coll-over,.room-over,.fp-tag{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--ox)}
+.eyebrow::before{width:36px;height:1px;border-radius:0;background:currentColor}
+.coll-over::before,.room-over::before{background:currentColor}
+.fp-tag b{background:var(--ink);color:var(--primer);transform:none;padding:4px 9px;letter-spacing:.18em}
+.prep .eyebrow,.areas .eyebrow,.estimate .eyebrow{color:var(--brass)}
+.prep .eyebrow::before,.areas .eyebrow::before,.estimate .eyebrow::before{background:var(--brass)}
+
+/* Shotgun picker card: square corners like every other card */
+.studio{border-radius:2px}
+.house-stage{border-radius:0}
+
+/* Trust strip under the hero */
+.tape{background:var(--ink);border-top:1px solid rgba(201,163,91,.18)}
+.tape-piece{background:#E6DCC5;color:var(--ink)}
+.tape-piece:nth-child(even){background:#EFE7D4}
+.tape-piece b{color:var(--ox)}
+
+/* Services (light) */
+.collection{background:var(--primer);color:var(--ink)}
+.coll-head p{color:var(--ink-2)}
+.idx-group{color:var(--ox)}
+.idx a{border-bottom:1px solid var(--line)}
+.idx .ic{border-color:rgba(29,26,23,.22);color:var(--ink-3)}
+.idx .ar{color:var(--ox)}
+.idx a:hover,.idx a:focus-visible,.idx a.on{color:var(--ox)}
+.idx a:hover .ic,.idx a:focus-visible .ic,.idx a.on .ic{background:var(--ink);color:var(--brass);border-color:var(--ink)}
+.idx a:hover .ar,.idx a.on .ar,.idx a:focus-visible .ar{color:var(--ox)}
+.panel .info{background:var(--ink);color:var(--primer)}
+.panel .info p{color:var(--stone-2)}
+.panel .info a{color:var(--brass);border-bottom-color:var(--brass)}
+.panel-media{box-shadow:0 30px 60px -36px rgba(20,18,16,.55)}
+
+/* Room Study (light paper) */
+.room{background:var(--paper);border-top:1px solid var(--line)}
+.rsw[aria-pressed="true"]{box-shadow:0 0 0 3px var(--paper),0 0 0 5px var(--ink)}
+
+/* Prep (dark) */
+.prep{background:var(--ink)}
+.prep h2 em{color:var(--brass)}
+.threat{border-color:var(--line-d)}
+.layer.l5{background:var(--brass);color:var(--black)}
+
+/* Process (light) */
+.roller-bar{background:var(--ox)}
+.step .tag{color:var(--ox)}
+
+/* Our Work (light paper, cream masking tape) */
+.fp{background:var(--paper)}
+.fp-head p{color:var(--ink-2)}
+.fp-pin::before,.fp-pin::after{background:rgba(222,210,182,.95)}
+.fp-stamp{border-color:var(--ox);color:var(--ox)}
+.fp-pin small{color:var(--ink-3)}
+
+/* Reviews (drop cloth, muted paint flecks in theme colors) */
+.reviews{background:
+   radial-gradient(circle at 12% 18%,rgba(110,43,43,.14) 0 18px,transparent 19px),
+   radial-gradient(circle at 15% 22%,rgba(110,43,43,.12) 0 6px,transparent 7px),
+   radial-gradient(circle at 86% 12%,rgba(201,163,91,.28) 0 26px,transparent 27px),
+   radial-gradient(circle at 82% 16%,rgba(201,163,91,.24) 0 8px,transparent 9px),
+   radial-gradient(circle at 70% 88%,rgba(29,26,23,.08) 0 22px,transparent 23px),
+   radial-gradient(circle at 24% 84%,rgba(201,163,91,.22) 0 16px,transparent 17px),
+   repeating-linear-gradient(0deg,rgba(29,26,23,.025) 0 1px,transparent 1px 4px),
+   repeating-linear-gradient(90deg,rgba(29,26,23,.025) 0 1px,transparent 1px 4px),
+   var(--cloth)}
+.stars{color:#B8913F}
+.note .sig h3{color:var(--ink)}
+
+/* Service Areas (dark) */
+.areas{background:var(--ink);color:var(--primer)}
+.areas-copy p{color:var(--stone-2)}
+.home-base{background:transparent;border:1px solid rgba(201,163,91,.45);border-radius:0;color:var(--primer)}
+.home-base p{color:var(--stone)}
+.home-base svg{stroke:var(--brass)}
+.towns a{border:1px solid rgba(242,237,228,.38);color:var(--primer)}
+.towns a i{border:2px solid var(--primer)}
+.towns a:hover,.towns a:focus-visible,.towns a.hot{background:var(--brass);color:var(--black);border-color:var(--brass)}
+.towns a:hover i,.towns a.hot i{border-color:var(--black)}
+.cmap{background:#24201C;border:1px solid var(--line-d);border-radius:0}
+.cmap .cm-lake{fill:rgba(127,150,163,.28);stroke:rgba(242,237,228,.3)}
+.cmap .cm-river{stroke:#7F96A3}
+.cmap .cm-home circle{fill:var(--brass)}
+.cmap .cm-home text{fill:var(--brass)}
+.cmap a.cm-pt:hover text,.cmap a.cm-pt:focus text,.cmap a.cm-pt.hot text{fill:var(--brass)}
+
+/* FAQ (light) */
+.faq-side p,.qa .ans{color:var(--ink-2)}
+.plus{border-width:1px;border-radius:0}
+.qa[open] .plus{background:var(--brass);border-color:var(--brass)}
+
+/* Estimate (dark) */
+.estimate{background:var(--black);color:var(--primer)}
+.estimate h2 em{color:var(--brass)}
+.est-copy p{color:var(--stone-2)}
+.big-phone{border-top-color:rgba(242,237,228,.2)}
+.big-phone small{color:var(--brass)}
+.hours{color:var(--stone)}
+form.est{background:var(--paper);border-radius:0;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.field input,.field select,.field textarea,.seg span{border-radius:0}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--ox);box-shadow:0 0 0 3px rgba(110,43,43,.15)}
+.form-msg{border-radius:0}
+
+/* Footer (dark) */
+footer.site{background:var(--ink)}
+footer h4{color:var(--brass)}
+footer a:hover{color:var(--brass)}
+.socials a{border-color:rgba(201,163,91,.35)}
+.socials a:hover{background:var(--brass);color:var(--black)}
+
+@media (max-width:900px){
+  .menu{background:var(--black);border-bottom:1px solid rgba(201,163,91,.22)}
+  .menu li{border-bottom:1px solid var(--line-d)}
+  .menu a{font-size:14px}
+}
+@media (max-width:620px){
+  .brand-logo{height:42px}
+}
+
+/* ===== Round 2: CTA rows, popup form, scrolling form, room title ===== */
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;align-items:center}
+.cta-row.center{justify-content:center;margin-top:52px}
+.cta-row .btn svg{width:16px;height:16px}
+.btn-call{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn-call:hover{background:var(--ink);color:var(--primer)}
+.on-dark .btn-call{color:var(--primer);border-color:rgba(242,237,228,.55)}
+.on-dark .btn-call:hover{background:var(--primer);color:var(--black);border-color:var(--primer)}
+.fp-foot + .cta-row{margin-top:22px}
+.room-left .cta-row{margin-top:28px}
+.areas-copy .cta-row{flex-direction:column;align-items:stretch;max-width:440px;margin-top:22px;gap:12px}
+.areas-copy .cta-row .btn{justify-content:center}
+
+/* Room Study title spans both columns on one line */
+.room-head{margin-bottom:clamp(30px,4vw,52px)}
+.room-head h2{font-size:clamp(30px,7.6vw,76px);line-height:1.02}
+.room{padding-top:clamp(56px,7vw,96px)}
+
+/* Estimate form scrolls inside its own box on desktop, so the section has no dead space */
+form.est .form-actions{position:sticky;bottom:calc(-1 * clamp(22px,3vw,34px));background:var(--paper);padding:14px 0 clamp(22px,3vw,34px);margin-bottom:calc(-1 * clamp(22px,3vw,34px));z-index:2;box-shadow:0 -14px 18px -10px var(--paper)}
+form.est .form-actions .btn{margin-top:0}
+@media (min-width:901px){
+  .estimate form.est{max-height:min(620px,calc(100vh - 150px));overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--brass) transparent}
+  .est-grid{align-items:center}
+}
+
+/* Popup estimate form */
+dialog.est-modal{border:0;padding:0;background:transparent;width:min(640px,calc(100% - 24px));max-height:calc(100dvh - 24px);overflow:visible}
+dialog.est-modal::backdrop{background:rgba(20,18,16,.78);backdrop-filter:blur(3px)}
+dialog.est-modal form.est{max-height:calc(100dvh - 24px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--brass) transparent;border-top:4px solid var(--brass)}
+dialog.est-modal .modal-x{position:absolute;top:10px;right:12px;z-index:3;width:40px;height:40px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font-size:24px;line-height:1;cursor:pointer}
+dialog.est-modal .modal-x:hover{background:var(--ink);color:var(--primer)}
+dialog.est-modal form.est h3{padding-right:46px}
+html.modal-open{overflow:hidden}
+@media (max-width:620px){
+  .cta-row{flex-direction:column;align-items:stretch}
+  .cta-row .btn{justify-content:center}
+  .fields{grid-template-columns:1fr}
+}
+
+/* ===== Back to top + chat assistant ===== */
+.sr-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.to-top{position:fixed;right:28px;bottom:104px;z-index:70;width:52px;height:52px;border-radius:50%;border:0;padding:0;background:var(--ink);color:var(--brass);cursor:pointer;display:grid;place-items:center;box-shadow:0 10px 24px -10px rgba(0,0,0,.55);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s,background .2s}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}
+.to-top:hover{background:var(--black);color:var(--brass-2)}
+.to-top .arr{width:20px;height:20px;position:relative}
+.to-top .ring{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.to-top .ring circle{fill:none;stroke-width:2.5}
+.to-top .ring-bg{stroke:rgba(242,237,228,.14)}
+.to-top .ring-fg{stroke:var(--brass);stroke-dasharray:138.2;stroke-dashoffset:138.2;transition:stroke-dashoffset .1s linear}
+
+.chat-launch{position:fixed;right:24px;bottom:24px;z-index:71;width:62px;height:62px;border-radius:50%;border:2px solid var(--brass);background:var(--ink);color:var(--brass);cursor:pointer;display:grid;place-items:center;box-shadow:0 14px 30px -12px rgba(0,0,0,.6);transition:transform .2s,background .2s}
+.chat-launch:hover{transform:translateY(-2px);background:var(--black)}
+.chat-launch svg{width:26px;height:26px}
+.chat-launch .ic-close{display:none}
+.chat-launch[aria-expanded="true"] .ic-open,.chat-launch[aria-expanded="true"] .chat-tip{display:none}
+.chat-launch[aria-expanded="true"] .ic-close{display:block}
+.chat-tip{position:absolute;right:74px;top:50%;transform:translateY(-50%);white-space:nowrap;background:var(--paper);color:var(--ink);font:600 13px var(--sans);padding:9px 14px;box-shadow:0 10px 24px -12px rgba(0,0,0,.5);border-left:3px solid var(--brass);opacity:0;transition:opacity .3s;pointer-events:none}
+.chat-launch.tease .chat-tip,.chat-launch:hover .chat-tip,.chat-launch:focus-visible .chat-tip{opacity:1}
+
+.chat-panel{position:fixed;right:24px;bottom:98px;z-index:72;width:min(380px,calc(100vw - 32px));height:min(560px,calc(100vh - 130px));display:flex;flex-direction:column;background:var(--paper);color:var(--ink);box-shadow:0 30px 70px -20px rgba(0,0,0,.6);border-top:4px solid var(--brass)}
+.chat-panel[hidden]{display:none}
+.chat-head{display:flex;align-items:center;gap:12px;padding:14px 14px 14px 16px;background:var(--ink);color:var(--primer)}
+.chat-avatar{width:40px;height:40px;border-radius:50%;background:var(--brass);color:var(--black);display:grid;place-items:center;flex:none}
+.chat-avatar svg{width:20px;height:20px}
+.chat-head h2{font-size:22px;line-height:1.1}
+.chat-head p{margin:2px 0 0;font-size:11.5px;color:var(--stone-2);line-height:1.35}
+.chat-x{margin-left:auto;align-self:flex-start;background:none;border:1px solid rgba(242,237,228,.3);color:var(--primer);width:32px;height:32px;font-size:20px;line-height:1;cursor:pointer;flex:none}
+.chat-x:hover{border-color:var(--brass);color:var(--brass)}
+.chat-log{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;scrollbar-width:thin;scrollbar-color:var(--brass) transparent}
+.msg{max-width:86%;padding:10px 13px;font-size:14.5px;line-height:1.5}
+.msg.bot{align-self:flex-start;background:#fff;border:1px solid var(--line)}
+.msg.me{align-self:flex-end;background:var(--ink);color:var(--primer)}
+.msg a{color:var(--ox);font-weight:600}
+.msg a[href^="tel:"]{white-space:nowrap}
+.to-top.chat-on{opacity:0;pointer-events:none}
+.msg ul{margin:6px 0 0;padding-left:18px}
+.msg .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.msg .acts .btn{padding:10px 14px;font-size:11.5px}
+.msg .acts .btn-call{color:var(--ink)}
+.msg.typing{display:flex;gap:4px;align-items:center}
+.msg.typing i{width:6px;height:6px;border-radius:50%;background:var(--stone);animation:blink 1s infinite}
+.msg.typing i:nth-child(2){animation-delay:.15s}.msg.typing i:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+.chat-chips{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 12px}
+.chat-chips button{border:1px solid var(--ink);background:transparent;color:var(--ink);font:600 12.5px var(--sans);padding:8px 12px;cursor:pointer}
+.chat-chips button:hover{background:var(--ink);color:var(--primer)}
+.chat-form{display:flex;border-top:1px solid var(--line)}
+.chat-form input{flex:1;border:0;padding:15px 16px;font:15px var(--sans);background:#fff;color:var(--ink);min-width:0}
+.chat-form input:focus{outline:2px solid var(--brass);outline-offset:-2px}
+.chat-form button{width:54px;border:0;background:var(--brass);color:var(--black);cursor:pointer;display:grid;place-items:center}
+.chat-form button svg{width:18px;height:18px}
+
+@media (max-width:900px){
+  .chat-launch{bottom:90px;right:14px;width:56px;height:56px}
+  .to-top{bottom:158px;right:16px;width:48px;height:48px}
+  .chat-panel{right:8px;left:8px;width:auto;bottom:156px;height:min(520px,calc(100vh - 176px))}
+  .chat-tip{display:none}
+}
+@media (prefers-reduced-motion:reduce){.msg.typing i{animation:none}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top" aria-label="Big Easy Painting home">
+      <img class="brand-logo" src="https://www.bigeasypainting.com/wp-content/uploads/2023/07/logo.png" alt="Big Easy Painting logo" width="186" height="104">
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="https://www.bigeasypainting.com/residential/">Residential</a></li>
+      <li><a href="https://www.bigeasypainting.com/commercial/">Commercial</a></li>
+      <li><a href="#areas">Service Areas</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="https://www.bigeasypainting.com/blog/">Blog</a></li>
+      <li><a href="https://www.bigeasypainting.com/contact/">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+15046082155">504-608-2155</a>
+      <a class="btn btn-coral" href="#estimate" data-open-estimate>Free Estimate</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ===== 1. HERO: video background, Option D copy, Option A shotgun picker ===== -->
+<section class="hero" id="hero">
+  <video class="hero-video" id="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true"
+    poster="https://images.pexels.com/videos/6474363/pexels-photo-6474363.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+    <source src="https://videos.pexels.com/video-files/6474363/6474363-hd_1920_1080_25fps.mp4" type="video/mp4" media="(min-width: 1200px)">
+    <source src="https://videos.pexels.com/video-files/6474363/6474363-hd_1280_720_25fps.mp4" type="video/mp4" media="(min-width: 701px)">
+    <source src="https://videos.pexels.com/video-files/6474363/6474363-sd_960_540_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <span class="hero-over">New Orleans Interior &amp; Exterior Painting</span>
+      <h1>New Orleans Painters Who Treat Every Wall Like a <em>Canvas</em></h1>
+      <p class="hero-lead">Big Easy Painting brings a careful hand to homes and businesses across greater New Orleans. Thorough prep, clean lines, and a crew that's licensed and insured. Your estimate is free, on site or remote.</p>
+      <div class="hero-ctas">
+        <a class="btn-d brass" href="#estimate" data-open-estimate>Book a Free Estimate
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn-d line" href="tel:+15046082155">504-608-2155</a>
+      </div>
+    </div>
+
+    <div class="studio rv" aria-labelledby="studio-title">
+      <div class="studio-head">
+        <h2 id="studio-title">Try a Color on a Shotgun</h2>
+        <span class="code">Tap a Chip</span>
+      </div>
+      <div class="house-stage">
+        <div class="sun" aria-hidden="true"></div>
+        <svg viewBox="0 0 360 330" preserveAspectRatio="xMidYMax meet" role="img" aria-label="Illustration of a New Orleans shotgun house painted in the selected color scheme">
+          <defs>
+            <pattern id="siding" width="10" height="11" patternUnits="userSpaceOnUse"><rect width="10" height="11" fill="none"/><line x1="0" y1="10.5" x2="10" y2="10.5" stroke="rgba(0,0,0,.09)" stroke-width="1"/></pattern>
+            <pattern id="louver" width="6" height="6" patternUnits="userSpaceOnUse"><line x1="0" y1="5" x2="6" y2="5" stroke="rgba(0,0,0,.22)" stroke-width="1.2"/></pattern>
+          </defs>
+          <!-- ground -->
+          <rect x="0" y="312" width="360" height="18" fill="#C9C0AE"/>
+          <rect x="0" y="306" width="360" height="8" fill="#B5C99A"/>
+          <!-- piers -->
+          <rect x="70" y="288" width="16" height="20" fill="#9C8F7E"/><rect x="172" y="288" width="16" height="20" fill="#9C8F7E"/><rect x="274" y="288" width="16" height="20" fill="#9C8F7E"/>
+          <!-- roof -->
+          <polygon points="38,104 180,18 322,104" fill="#3B3631"/>
+          <!-- gable face -->
+          <polygon class="h-body" points="62,100 180,32 298,100"/>
+          <polygon points="62,100 180,32 298,100" fill="url(#siding)"/>
+          <polyline class="h-trim-s" points="56,104 180,28 304,104" fill="none" stroke-width="7" stroke-linejoin="round"/>
+          <!-- gable vent -->
+          <polygon class="h-trim" points="180,52 200,76 180,100 160,76"/>
+          <polygon points="180,60 194,76 180,92 166,76" fill="url(#louver)"/>
+          <!-- body -->
+          <rect class="h-body" x="58" y="100" width="244" height="190"/>
+          <rect x="58" y="100" width="244" height="190" fill="url(#siding)"/>
+          <!-- frieze + gingerbread brackets -->
+          <rect class="h-trim" x="50" y="100" width="260" height="14"/>
+          <path class="h-trim" d="M66 114 h26 c0 10 -10 18 -26 22z"/>
+          <path class="h-trim" d="M294 114 h-26 c0 10 10 18 26 22z"/>
+          <path class="h-trim" d="M166 114 h28 c0 8 -6 13 -14 13 s-14 -5 -14 -13z"/>
+          <!-- columns -->
+          <rect class="h-trim" x="58" y="114" width="10" height="176"/>
+          <rect class="h-trim" x="292" y="114" width="10" height="176"/>
+          <!-- window + shutters -->
+          <rect class="h-shut" x="82" y="140" width="20" height="118" rx="1"/>
+          <rect x="82" y="140" width="20" height="118" fill="url(#louver)"/>
+          <rect class="h-trim" x="102" y="136" width="58" height="126"/>
+          <rect x="108" y="142" width="46" height="114" fill="#2C3E48"/>
+          <rect class="h-trim" x="129" y="142" width="4" height="114"/>
+          <rect class="h-trim" x="108" y="181" width="46" height="3"/>
+          <rect class="h-trim" x="108" y="219" width="46" height="3"/>
+          <rect class="h-shut" x="160" y="140" width="20" height="118" rx="1"/>
+          <rect x="160" y="140" width="20" height="118" fill="url(#louver)"/>
+          <!-- door + shutters -->
+          <rect class="h-shut" x="196" y="140" width="18" height="140" rx="1"/>
+          <rect x="196" y="140" width="18" height="140" fill="url(#louver)"/>
+          <rect class="h-trim" x="214" y="128" width="54" height="156"/>
+          <rect x="220" y="134" width="42" height="18" fill="#2C3E48"/>
+          <rect class="h-door" x="220" y="156" width="42" height="128"/>
+          <rect x="226" y="164" width="30" height="46" fill="rgba(0,0,0,.12)"/>
+          <rect x="226" y="218" width="30" height="58" fill="rgba(0,0,0,.12)"/>
+          <circle cx="255" cy="222" r="2.6" fill="#E8C66A"/>
+          <rect class="h-shut" x="268" y="140" width="18" height="140" rx="1"/>
+          <rect x="268" y="140" width="18" height="140" fill="url(#louver)"/>
+          <!-- porch floor + steps -->
+          <rect class="h-trim" x="48" y="284" width="264" height="8"/>
+          <rect x="206" y="292" width="72" height="6" fill="#B9AE9E"/>
+          <rect x="200" y="298" width="84" height="6" fill="#A99D8B"/>
+          <rect x="194" y="304" width="96" height="6" fill="#998D7B"/>
+          <!-- plants -->
+          <circle cx="40" cy="296" r="16" fill="#6E8F5A"/><circle cx="26" cy="302" r="11" fill="#5C7C4A"/>
+          <circle cx="330" cy="298" r="14" fill="#6E8F5A"/>
+        </svg>
+      </div>
+      <div class="now" aria-live="polite">
+        <div><strong id="scheme-name">Marigny Mint</strong><br><span class="code" id="scheme-code">BE-501 · Body / Trim / Shutters / Door</span></div>
+      </div>
+      <div class="chips" role="group" aria-label="Color schemes">
+        <button class="chip" aria-pressed="true" data-name="Marigny Mint" data-code="BE-501" data-body="#A8D5BA" data-trim="#FBF7EE" data-shutter="#1F5C5A" data-door="#D9583B" aria-label="Marigny Mint"><span style="background:#A8D5BA"></span><span style="background:#1F5C5A"></span></button>
+        <button class="chip" aria-pressed="false" data-name="Bywater Blush" data-code="BE-502" data-body="#EFB7A6" data-trim="#FFF9F0" data-shutter="#2F4A3A" data-door="#2F4A3A" aria-label="Bywater Blush"><span style="background:#EFB7A6"></span><span style="background:#2F4A3A"></span></button>
+        <button class="chip" aria-pressed="false" data-name="Uptown Ochre" data-code="BE-503" data-body="#E8B04B" data-trim="#FDF6E7" data-shutter="#7A2E2E" data-door="#7A2E2E" aria-label="Uptown Ochre"><span style="background:#E8B04B"></span><span style="background:#7A2E2E"></span></button>
+        <button class="chip" aria-pressed="false" data-name="Tremé Teal" data-code="BE-504" data-body="#2E7D7A" data-trim="#F6F1E6" data-shutter="#E8A33D" data-door="#E8A33D" aria-label="Tremé Teal"><span style="background:#2E7D7A"></span><span style="background:#E8A33D"></span></button>
+        <button class="chip" aria-pressed="false" data-name="Esplanade Lilac" data-code="BE-505" data-body="#B6A6D6" data-trim="#FFFFFF" data-shutter="#3E3560" data-door="#C8553D" aria-label="Esplanade Lilac"><span style="background:#B6A6D6"></span><span style="background:#3E3560"></span></button>
+        <button class="chip" aria-pressed="false" data-name="Magazine Street Cream" data-code="BE-506" data-body="#F1E6CF" data-trim="#FFFFFF" data-shutter="#24453A" data-door="#24453A" aria-label="Magazine Street Cream"><span style="background:#F1E6CF"></span><span style="background:#24453A"></span></button>
+      </div>
+      <p class="studio-note">Just for fun. We'll talk through real colors and finishes with you during your estimate.</p>
+    </div>
+  </div>
+  <button class="video-toggle" id="video-toggle" type="button" aria-pressed="false">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path id="vt-icon" d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg><span id="vt-label">Pause Video</span>
+  </button>
+  <span class="video-credit">Video: Tima Miroshnichenko / Pexels</span>
+</section>
+
+<!-- ===== 2. TAPE STRIP ===== -->
+<section class="tape" aria-label="Why homeowners choose Big Easy Painting">
+  <div class="tape-track">
+    <span class="tape-piece"><b>✓</b> Licensed &amp; Insured</span>
+    <span class="tape-piece"><b>✓</b> Free On-Site or Remote Estimates</span>
+    <span class="tape-piece"><b>✓</b> Eco-Friendly Paint Options</span>
+    <span class="tape-piece"><b>✓</b> Homes &amp; Businesses</span>
+    <span class="tape-piece"><b>✓</b> References on Request</span>
+    <span class="tape-piece"><b>✓</b> Cleanup Included</span>
+    <span class="tape-piece" aria-hidden="true"><b>✓</b> Licensed &amp; Insured</span>
+    <span class="tape-piece" aria-hidden="true"><b>✓</b> Free On-Site or Remote Estimates</span>
+    <span class="tape-piece" aria-hidden="true"><b>✓</b> Eco-Friendly Paint Options</span>
+    <span class="tape-piece" aria-hidden="true"><b>✓</b> Homes &amp; Businesses</span>
+    <span class="tape-piece" aria-hidden="true"><b>✓</b> References on Request</span>
+    <span class="tape-piece" aria-hidden="true"><b>✓</b> Cleanup Included</span>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#F2EDE4">
+  <rect y="-2" width="1440" height="16" fill="#1D1A17"/>
+  <g fill="#1D1A17"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
+</svg>
+
+<!-- ===== 3. SERVICES: Option D collection, Option A icons, photo per service ===== -->
+<section class="collection" id="services">
+  <div class="wrap">
+    <div class="coll-head rv">
+      <div>
+        <span class="coll-over">The Collection</span>
+        <h2>Our Painting Services</h2>
+      </div>
+      <p>Eleven services for homes and businesses. Hover over a service to preview it, or click through for the full details.</p>
+    </div>
+    <div class="coll-grid">
+      <div class="rv">
+        <h3 class="idx-group">Residential</h3>
+        <ul class="idx">
+          <li><a href="https://www.bigeasypainting.com/residential/interior-home-painting/" data-img="https://images.pexels.com/photos/994164/pexels-photo-994164.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" data-alt="Paint roller covering a gray wall with fresh white paint" data-d="Kitchens, living rooms, bedrooms, bathrooms, hallways, foyers, doors, and windows." class="on"><span class="ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="24" height="10" rx="2"/><path d="M32 13h6v10H22v6"/><rect x="19" y="29" width="6" height="12" rx="1.5"/></svg></span><h3>Interior Home Painting</h3><span class="ar">View</span><img class="idx-thumb" src="https://images.pexels.com/photos/994164/pexels-photo-994164.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" alt="" loading="lazy" width="120" height="90"></a></li>
+          <li><a href="https://www.bigeasypainting.com/residential/exterior-home-painting/" data-img="https://www.bigeasypainting.com/wp-content/uploads/2023/06/our-projects-image3-1024x768.jpg" data-alt="Brick home exterior mid-repaint by Big Easy Painting, windows masked off" data-d="Siding, brick, trim, and front doors, prepped to stand up to heat, rain, and humidity."><span class="ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22 24 8l18 14"/><path d="M11 19v21h26V19"/><rect x="20" y="28" width="8" height="12"/></svg></span><h3>Exterior Home Painting</h3><span class="ar">View</span><img class="idx-thumb" src="https://www.bigeasypainting.com/wp-content/uploads/2023/06/our-projects-image3-435x491.jpg" alt="" loading="lazy" width="120" height="90"></a></li>
+          <li><a href="https://www.bigeasypainting.com/residential/cabinet-painting/" data-img="https://images.pexels.com/photos/94865/pexels-photo-94865.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" data-alt="White painted kitchen cabinets with under-cabinet lighting" data-d="A durable, refinished look for kitchen and bathroom cabinets."><span class="ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="10" width="32" height="28" rx="2"/><path d="M24 10v28M19 22v4M29 22v4"/></svg></span><h3>Cabinet Painting</h3><span class="ar">View</span><img class="idx-thumb" src="https://images.pexels.com/photos/94865/pexels-photo-94865.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" alt="" loading="lazy" width="120" height="90"></a></li>
+          <li><a href="https://www.bigeasypainting.com/residential/deck-staining-painting/" data-img="https://images.pexels.com/photos/15869198/pexels-photo-15869198.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" data-alt="Weathered wood boards partly covered with fresh stain" data-d="Stain or paint that protects the wood and keeps your deck looking good all year."><span class="ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 20h36M6 28h36M6 36h36M12 20v20M36 20v20M12 20V10M36 20V10"/></svg></span><h3>Deck Staining &amp; Painting</h3><span class="ar">View</span><img class="idx-thumb" src="https://images.pexels.com/photos/15869198/pexels-photo-15869198.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" alt="" loading="lazy" width="120" height="90"></a></li>
+          <li><a href="https://www.bigeasypainting.com/residential/kitchen-remodel/" data-img="https://images.pexels.com/photos/7601088/pexels-photo-7601088.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" data-alt="Bright finished kitchen with white cabinets" data-d="Kitchen updates from cabinets to walls, finished with paint chosen for a busy room."><span class="ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="22" width="32" height="18" rx="2"/><path d="M8 30h32M17 12h14l-2 10H19z"/></svg></span><h3>Kitchen Remodel</h3><span class="ar">View</span><img class="idx-thumb" src="https://images.pexels.com/photos/7601088/pexels-photo-7601088.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" alt="" loading="lazy" width="120" height="90"></a></li>
+          <li><a href="https://www.bigeasypainting.com/residential/pressure-washing/" data-img="https://images.pexels.com/photos/5652626/pexels-photo-5652626.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" data-alt="Worker pressure washing the siding of a house" data-d="Clean siding, driveways, and decks, as prep before paint or as its own job."><span class="ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 30h14l4-6h8M34 24l6-4M34 24l6 0M34 24l6 4"/><rect x="8" y="26" width="8" height="12" rx="2"/></svg></span><h3>Pressure Washing</h3><span class="ar">View</span><img class="idx-thumb" src="https://images.pexels.com/photos/5652626/pexels-photo-5652626.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" alt="" loading="lazy" width="120" height="90"></a></li>
+        </ul>
+        <h3 class="idx-group">Commercial</h3>
+        <ul class="idx">
+          <li><a href="https://www.bigeasypainting.com/commercial/office-painting/" data-img="https://images.pexels.com/photos/36631701/pexels-photo-36631701.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" data-alt="Bright open office with workstations" data-d="Workspaces painted on a schedule built around your team and your customers."><span class="ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="6" width="28" height="36" rx="2"/><path d="M16 14h4M28 14h4M16 22h4M28 22h4M16 30h4M28 30h4M21 42v-6h6v6"/></svg></span><h3>Office Painting</h3><span class="ar">View</span><img class="idx-thumb" src="https://images.pexels.com/photos/36631701/pexels-photo-36631701.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" alt="" loading="lazy" width="120" height="90"></a></li>
+          <li><a href="https://www.bigeasypainting.com/commercial/hospital-painting/" data-img="https://images.pexels.com/photos/37036967/pexels-photo-37036967.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" data-alt="Clean, bright hospital corridor" data-d="Medical spaces painted with attention to clean lines and durable, washable finishes."><span class="ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="32" height="32" rx="4"/><path d="M24 16v16M16 24h16"/></svg></span><h3>Hospital Painting</h3><span class="ar">View</span><img class="idx-thumb" src="https://images.pexels.com/photos/37036967/pexels-photo-37036967.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" alt="" loading="lazy" width="120" height="90"></a></li>
+          <li><a href="https://www.bigeasypainting.com/commercial/school-painting/" data-img="https://images.pexels.com/photos/36650154/pexels-photo-36650154.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" data-alt="Empty classroom with desks and a chalkboard" data-d="Classrooms, hallways, and common areas painted with finishes made for heavy use."><span class="ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 24 8l20 10-20 10z"/><path d="M12 22v10c0 4 24 4 24 0V22M44 18v12"/></svg></span><h3>School Painting</h3><span class="ar">View</span><img class="idx-thumb" src="https://images.pexels.com/photos/36650154/pexels-photo-36650154.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" alt="" loading="lazy" width="120" height="90"></a></li>
+          <li><a href="https://www.bigeasypainting.com/commercial/gym-painting/" data-img="https://images.pexels.com/photos/17211446/pexels-photo-17211446.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" data-alt="Gym interior with exercise equipment" data-d="Walls and spaces built to take sweat, scuffs, and constant foot traffic."><span class="ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 24h36M10 16v16M16 12v24M32 12v24M38 16v16"/></svg></span><h3>Gym Painting</h3><span class="ar">View</span><img class="idx-thumb" src="https://images.pexels.com/photos/17211446/pexels-photo-17211446.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" alt="" loading="lazy" width="120" height="90"></a></li>
+          <li><a href="https://www.bigeasypainting.com/commercial/pressure-washing/" data-img="https://images.pexels.com/photos/9245160/pexels-photo-9245160.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" data-alt="Worker in coveralls pressure washing an outdoor wall" data-d="Storefronts, walkways, and building exteriors washed clean and ready for customers."><span class="ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18h36l-3-8H9zM9 18v22h30V18M20 40V28h8v12"/></svg></span><h3>Commercial Pressure Washing</h3><span class="ar">View</span><img class="idx-thumb" src="https://images.pexels.com/photos/9245160/pexels-photo-9245160.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" alt="" loading="lazy" width="120" height="90"></a></li>
+        </ul>
+      </div>
+      <div class="panel" aria-hidden="true">
+        <div class="panel-media">
+          <img id="p-img" src="https://images.pexels.com/photos/994164/pexels-photo-994164.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" alt="" width="1100" height="900">
+          <span class="panel-ic" id="p-ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="24" height="10" rx="2"/><path d="M32 13h6v10H22v6"/><rect x="19" y="29" width="6" height="12" rx="1.5"/></svg></span>
+        </div>
+        <div class="info"><h3 id="p-name">Interior Home Painting</h3><p id="p-desc">Kitchens, living rooms, bedrooms, bathrooms, hallways, foyers, doors, and windows.</p><a id="p-link" href="https://www.bigeasypainting.com/residential/interior-home-painting/" tabindex="-1">View Service</a></div>
+      </div>
+    </div>
+    <div class="cta-row center"><a class="btn btn-coral" href="#estimate" data-open-estimate>Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-call" href="tel:+15046082155"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Call 504-608-2155</a></div>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#FAF7F1">
+  <rect y="-2" width="1440" height="16" fill="#F2EDE4"/>
+  <g fill="#F2EDE4"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
+</svg>
+
+<!-- ===== 3B. ROOM STUDY (from Option D) ===== -->
+<section class="room" id="room">
+  <div class="wrap room-head rv">
+    <span class="room-over">Room Study</span>
+    <h2>See a Room in a New Light</h2>
+  </div>
+  <div class="wrap room-grid">
+    <div class="room-left rv">
+    <div class="room-stage">
+      <svg viewBox="0 0 600 400" role="img" aria-label="Illustration of a living room showing the selected wall and trim colors">
+        <defs>
+          <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DCEAF1"/><stop offset="1" stop-color="#A9C3D2"/></linearGradient>
+          <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8A6646"/><stop offset="1" stop-color="#6E4F35"/></linearGradient>
+        </defs>
+        <!-- ceiling -->
+        <polygon points="0,0 600,0 520,58 80,58" fill="#F4F1EA"/>
+        <!-- walls -->
+        <rect class="rm-wall" x="80" y="58" width="440" height="262"/>
+        <polygon class="rm-wall" points="0,0 80,58 80,320 0,400"/>
+        <polygon points="0,0 80,58 80,320 0,400" fill="rgba(0,0,0,.14)"/>
+        <polygon class="rm-wall" points="600,0 520,58 520,320 600,400"/>
+        <polygon points="600,0 520,58 520,320 600,400" fill="rgba(0,0,0,.08)"/>
+        <!-- crown + baseboards -->
+        <rect class="rm-trim" x="80" y="58" width="440" height="9"/>
+        <polygon class="rm-trim" points="0,0 80,58 80,67 0,11"/>
+        <polygon class="rm-trim" points="600,0 520,58 520,67 600,11"/>
+        <rect class="rm-trim" x="80" y="306" width="440" height="14"/>
+        <polygon class="rm-trim" points="0,382 80,306 80,320 0,400"/>
+        <polygon class="rm-trim" points="600,382 520,306 520,320 600,400"/>
+        <!-- floor -->
+        <polygon points="0,400 80,320 520,320 600,400" fill="url(#floor)"/>
+        <path d="M60 340 H540 M38 360 H562 M18 380 H582" stroke="rgba(0,0,0,.15)" stroke-width="1"/>
+        <ellipse cx="300" cy="368" rx="190" ry="22" fill="#B9A586" opacity=".75"/>
+        <!-- window -->
+        <rect class="rm-trim" x="356" y="104" width="128" height="164"/>
+        <rect x="366" y="114" width="108" height="144" fill="url(#glass)"/>
+        <rect class="rm-trim" x="417" y="114" width="6" height="144"/>
+        <rect class="rm-trim" x="366" y="183" width="108" height="6"/>
+        <rect class="rm-trim" x="348" y="266" width="144" height="8"/>
+        <!-- art -->
+        <rect x="132" y="112" width="132" height="92" fill="#C9A35B"/>
+        <rect x="140" y="120" width="116" height="76" fill="#F2EDE4"/>
+        <circle cx="178" cy="156" r="22" fill="#6E2B2B" opacity=".85"/>
+        <rect x="196" y="138" width="44" height="40" fill="#C9A35B" opacity=".8"/>
+        <path d="M146 188 C 180 170, 210 196, 250 176" stroke="#1D1A17" stroke-width="2" fill="none"/>
+        <!-- sofa -->
+        <rect x="108" y="236" width="196" height="36" rx="10" fill="#3B3631"/>
+        <rect x="100" y="262" width="212" height="40" rx="10" fill="#2E2A26"/>
+        <rect x="96" y="250" width="22" height="54" rx="8" fill="#3B3631"/>
+        <rect x="294" y="250" width="22" height="54" rx="8" fill="#3B3631"/>
+        <rect x="140" y="246" width="42" height="26" rx="6" fill="#C9A35B"/>
+        <rect x="112" y="300" width="6" height="12" fill="#1D1A17"/><rect x="294" y="300" width="6" height="12" fill="#1D1A17"/>
+        <!-- lamp -->
+        <path d="M330 180 h36 l-8 -30 h-20 z" fill="#E7DFD1"/>
+        <rect x="346" y="180" width="3" height="128" fill="#1D1A17"/>
+        <rect x="334" y="306" width="28" height="5" fill="#1D1A17"/>
+        <!-- plant -->
+        <rect x="492" y="276" width="26" height="34" fill="#A9684A"/>
+        <path d="M505 276 C 488 240, 470 236, 476 214 C 494 232, 500 250, 505 276 C 512 240, 528 228, 540 212 C 538 240, 522 258, 505 276" fill="#4E6B48"/>
+      </svg>
+    </div>
+    <div class="cta-row "><a class="btn btn-coral" href="#estimate" data-open-estimate>Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-call" href="tel:+15046082155"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Call 504-608-2155</a></div>
+    </div>
+    <div class="room-copy rv">
+      <p>Pick a wall color and a trim color to see how the pair changes the mood of a space. When you're ready for the real thing, we'll walk through colors and finishes with you during your estimate.</p>
+      <div class="room-picker">
+        <h3>Walls</h3>
+        <div class="rsw-row" role="group" aria-label="Wall colors">
+          <button class="rsw" data-k="rwall" data-v="#EEE8DC" data-n="Magnolia White" style="background:#EEE8DC" aria-pressed="false" aria-label="Magnolia White"></button>
+          <button class="rsw" data-k="rwall" data-v="#C9C3B6" data-n="Oyster Gray" style="background:#C9C3B6" aria-pressed="false" aria-label="Oyster Gray"></button>
+          <button class="rsw" data-k="rwall" data-v="#8FA58A" data-n="Absinthe Green" style="background:#8FA58A" aria-pressed="true" aria-label="Absinthe Green"></button>
+          <button class="rsw" data-k="rwall" data-v="#4F6B7D" data-n="Chicory Blue" style="background:#4F6B7D" aria-pressed="false" aria-label="Chicory Blue"></button>
+          <button class="rsw" data-k="rwall" data-v="#8A5A3C" data-n="Bourbon Brown" style="background:#8A5A3C" aria-pressed="false" aria-label="Bourbon Brown"></button>
+          <button class="rsw" data-k="rwall" data-v="#6E2B2B" data-n="Oxblood" style="background:#6E2B2B" aria-pressed="false" aria-label="Oxblood"></button>
+        </div>
+        <h3>Trim</h3>
+        <div class="rsw-row" role="group" aria-label="Trim colors">
+          <button class="rsw" data-k="rtrim" data-v="#FAFAF7" data-n="Bright White" style="background:#FAFAF7" aria-pressed="true" aria-label="Bright White"></button>
+          <button class="rsw" data-k="rtrim" data-v="#EFE6D2" data-n="Pale Cream" style="background:#EFE6D2" aria-pressed="false" aria-label="Pale Cream"></button>
+          <button class="rsw" data-k="rtrim" data-v="#23201C" data-n="Ink Black" style="background:#23201C" aria-pressed="false" aria-label="Ink Black"></button>
+        </div>
+        <div class="room-now" aria-live="polite">
+          <div><span>Walls</span><strong id="rn-rwall">Absinthe Green</strong></div>
+          <div><span>Trim</span><strong id="rn-rtrim">Bright White</strong></div>
+        </div>
+        <p class="room-note">Color names are for illustration only. Screens vary, so final colors get confirmed with real samples.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#1D1A17">
+  <rect y="-2" width="1440" height="16" fill="#FAF7F1"/>
+  <g fill="#FAF7F1"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
+</svg>
+
+<!-- ===== 4. PREP ===== -->
+<section class="prep" id="prep">
+  <div class="wrap prep-grid">
+    <div class="rv">
+      <span class="eyebrow">Built for the Bayou Climate</span>
+      <h2>In New Orleans, the Prep <em>Is</em> the Paint Job</h2>
+      <p class="prep-lead">Humidity, summer storms, and hard Gulf sun find every shortcut in a paint job. So every project starts with the surface. We check its condition, plan the prep, and match products to the space before a single color goes on.</p>
+      <div class="threats">
+        <div class="threat"><h3>Blistering</h3><p>Trapped moisture pushes fresh paint off the wall.</p></div>
+        <div class="threat"><h3>Peeling</h3><p>Paint over a dirty or glossy surface lets go early.</p></div>
+        <div class="threat"><h3>Mildew</h3><p>Damp, shaded walls grow it fast without the right prep.</p></div>
+      </div>
+    </div>
+    <div class="rv">
+      <div class="layers" id="layers">
+        <div class="layer l1"><h3>Surface Check</h3><span class="n">Layer 01</span></div>
+        <div class="layer l2"><h3>Wash, Scrape, and Sand</h3><span class="n">Layer 02</span></div>
+        <div class="layer l3"><h3>Patch and Caulk</h3><span class="n">Layer 03</span></div>
+        <div class="layer l4"><h3>Prime</h3><span class="n">Layer 04</span></div>
+        <div class="layer l5"><h3>Finish Coats</h3><span class="n">Layer 05</span></div>
+      </div>
+      <p class="layers-cap">Cross-section of a wall, bottom to top</p>
+      <div class="cta-row on-dark"><a class="btn btn-coral" href="#estimate" data-open-estimate>Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-call" href="tel:+15046082155"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Call 504-608-2155</a></div>
+    </div>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#F2EDE4">
+  <rect y="-2" width="1440" height="16" fill="#1D1A17"/>
+  <g fill="#1D1A17"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
+</svg>
+
+<!-- ===== 5. PROCESS ===== -->
+<section class="process">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="eyebrow">How It Works</span>
+        <h2>Four Coats, From First Call to Final Walkthrough</h2>
+      </div>
+      <p>No project is too big or too small. Here's what working with us looks like.</p>
+    </div>
+    <div class="roller" id="roller">
+      <div class="roller-bar" aria-hidden="true"></div>
+      <ol class="steps" style="list-style:none;margin:0;padding:0">
+        <li class="step rv"><div class="step-n">1</div><span class="tag">Coat One</span><h3>Schedule Your Estimate</h3><p>Call us or fill out the form. We'll set up a free consultation and can share references if you ask.</p></li>
+        <li class="step rv"><div class="step-n">2</div><span class="tag">Coat Two</span><h3>Free Consultation</h3><p>We look at the size and scope, give you an accurate quote, and pick a start date that fits your schedule.</p></li>
+        <li class="step rv"><div class="step-n">3</div><span class="tag">Coat Three</span><h3>Prep and Paint</h3><p>Your painter gets to work and keeps you posted on progress, so you always know where things stand.</p></li>
+        <li class="step rv"><div class="step-n">4</div><span class="tag">Coat Four</span><h3>Walkthrough and Cleanup</h3><p>Once the job is finished to your satisfaction, we clean up every area we used.</p></li>
+      </ol>
+    </div>
+    <div class="cta-row center"><a class="btn btn-coral" href="#estimate" data-open-estimate>Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-call" href="tel:+15046082155"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Call 504-608-2155</a></div>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#FAF7F1">
+  <rect y="-2" width="1440" height="16" fill="#F2EDE4"/>
+  <g fill="#F2EDE4"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
+</svg>
+
+<!-- ===== 6. WORK: Option C field photos ===== -->
+<section class="fp" id="work">
+  <div class="wrap">
+    <div class="fp-head rv">
+      <div>
+        <span class="fp-tag"><b>Our Work</b> Projects</span>
+        <h2>Field Photos</h2>
+      </div>
+      <p>Straight from our project files: exterior repaints on brick homes around the area.</p>
+    </div>
+    <div class="fp-board">
+      <figure class="fp-pin rv"><img src="https://www.bigeasypainting.com/wp-content/uploads/2023/06/our-projects-image2-1024x576.jpg" alt="Single-story home with freshly painted white exterior" loading="lazy" width="1024" height="576"><span class="fp-stamp">Exterior</span><figcaption><h3>Full Exterior Refresh</h3><small>Residential</small></figcaption></figure>
+      <figure class="fp-pin rv"><img src="https://www.bigeasypainting.com/wp-content/uploads/2023/06/our-projects-image1-1024x576.jpg" alt="Painted white brick wall and window trim" loading="lazy" width="1024" height="576"><span class="fp-stamp">Exterior</span><figcaption><h3>Painted Brick and Trim</h3><small>Residential</small></figcaption></figure>
+      <figure class="fp-pin rv"><img src="https://www.bigeasypainting.com/wp-content/uploads/2023/06/our-projects-image3-1024x768.jpg" alt="Long brick exterior wall painted white" loading="lazy" width="1024" height="768"><span class="fp-stamp">Exterior</span><figcaption><h3>Brick Exterior Repaint</h3><small>Residential</small></figcaption></figure>
+      <figure class="fp-pin rv"><img src="https://www.bigeasypainting.com/wp-content/uploads/2023/06/our-projects-image4-1024x768.jpg" alt="Home exterior being painted white with a ladder set up" loading="lazy" width="1024" height="768"><span class="fp-stamp">In Progress</span><figcaption><h3>Repaint in Progress</h3><small>Residential</small></figcaption></figure>
+    </div>
+    <div class="fp-foot"><a class="fp-btn" href="https://www.instagram.com/bigeasypainting/" rel="noopener">See More on Instagram</a></div>
+    <div class="cta-row center"><a class="btn btn-coral" href="#estimate" data-open-estimate>Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-call" href="tel:+15046082155"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Call 504-608-2155</a></div>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#ECE4D6">
+  <rect y="-2" width="1440" height="16" fill="#FAF7F1"/>
+  <g fill="#FAF7F1"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
+</svg>
+
+<!-- ===== 7. REVIEWS ===== -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="eyebrow">Left on the Drop Cloth</span>
+        <h2>What Our Clients Say</h2>
+      </div>
+      <p>Kind words from homeowners and business owners we've painted for.</p>
+    </div>
+    <div class="notes">
+      <figure class="note rv"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>"They were early every morning and worked quickly without making too much of a mess in my home!"</blockquote><figcaption class="sig"><h3>Lucia Edwards</h3><small>Client</small></figcaption></figure>
+      <figure class="note rv"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>"Their advice on paint type and quality was helpful. We had full trust in their work throughout the process."</blockquote><figcaption class="sig"><h3>Emma Howard</h3><small>Client</small></figcaption></figure>
+      <figure class="note rv"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>"They created a beautiful exterior for our home. Always professional and quick with any updates we needed."</blockquote><figcaption class="sig"><h3>Erick Davidson</h3><small>Client</small></figcaption></figure>
+      <figure class="note rv"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>"They painted several rooms in my new home. My home looks great and the quality of work is excellent."</blockquote><figcaption class="sig"><h3>Chris Horton</h3><small>Client</small></figcaption></figure>
+      <figure class="note rv"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>"The team was attentive, professional, and reliable. They also respected our schedule while painting the kitchen."</blockquote><figcaption class="sig"><h3>Stella Hall</h3><small>Client</small></figcaption></figure>
+      <figure class="note rv"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>"Professional, friendly, and very customer focused. They did an excellent job on the pre-work."</blockquote><figcaption class="sig"><h3>David Butler</h3><small>Client</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#1D1A17">
+  <rect y="-2" width="1440" height="16" fill="#ECE4D6"/>
+  <g fill="#ECE4D6"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
+</svg>
+
+<!-- ===== 8. SERVICE AREAS ===== -->
+<section class="areas" id="areas">
+  <div class="wrap areas-grid">
+    <div class="areas-copy rv">
+      <span class="eyebrow">Service Areas</span>
+      <h2>Painting Across Greater New Orleans</h2>
+      <p>From the Northshore to the River Parishes, our crews travel to homes and businesses all over the region.</p>
+      <div class="home-base">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#E8A33D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 44s14-12.4 14-24a14 14 0 0 0-28 0c0 11.6 14 24 14 24z"/><circle cx="24" cy="20" r="5"/></svg>
+        <div><h3>Home Base: New Orleans</h3><p>Don't see your town? Call 504-608-2155 and ask.</p></div>
+      </div>
+      <div class="cta-row on-dark"><a class="btn btn-coral" href="#estimate" data-open-estimate>Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-call" href="tel:+15046082155"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Call 504-608-2155</a></div>
+    </div>
+    <div class="areas-right">
+    <ul class="towns rv">
+      <li><a href="https://www.bigeasypainting.com/service-areas/kenner/" data-t="kenner"><i style="background:#A8D5BA"></i>Kenner</a></li>
+      <li><a href="https://www.bigeasypainting.com/service-areas/gretna/" data-t="gretna"><i style="background:#D9583B"></i>Gretna</a></li>
+      <li><a href="https://www.bigeasypainting.com/service-areas/st-rose/" data-t="st-rose"><i style="background:#1F5C5A"></i>St. Rose</a></li>
+      <li><a href="https://www.bigeasypainting.com/service-areas/laplace/" data-t="laplace"><i style="background:#B6A6D6"></i>LaPlace</a></li>
+      <li><a href="https://www.bigeasypainting.com/service-areas/slidell/" data-t="slidell"><i style="background:#EFB7A6"></i>Slidell</a></li>
+      <li><a href="https://www.bigeasypainting.com/service-areas/mandeville/" data-t="mandeville"><i style="background:#F1E6CF"></i>Mandeville</a></li>
+      <li><a href="https://www.bigeasypainting.com/service-areas/covington/" data-t="covington"><i style="background:#2F4A3A"></i>Covington</a></li>
+      <li><a href="https://www.bigeasypainting.com/service-areas/madisonville/" data-t="madisonville"><i style="background:#7A4B2E"></i>Madisonville</a></li>
+      <li><a href="https://www.bigeasypainting.com/service-areas/hammond/" data-t="hammond"><i style="background:#3E5C7A"></i>Hammond</a></li>
+      <li><a href="https://www.bigeasypainting.com/service-areas/baton-rouge/" data-t="baton-rouge"><i style="background:#3E3560"></i>Baton Rouge</a></li>
+    </ul>
+    <figure class="cmap rv">
+      <svg viewBox="0 0 640 360" class="cm-svg" role="img" aria-label="Schematic map of the Big Easy Painting service area around Lake Pontchartrain">
+          <ellipse class="cm-lake" cx="450" cy="192" rx="128" ry="60"/>
+          <text class="cm-lbl" x="392" y="196">LAKE PONTCHARTRAIN</text>
+          <path class="cm-river" d="M30 96 C 110 170, 210 196, 300 246 S 390 300, 430 286 S 500 296, 512 322 S 560 352, 640 350"/>
+          <text class="cm-lbl" x="150" y="210" transform="rotate(24 150 210)">MISSISSIPPI RIVER</text>
+          <a href="https://www.bigeasypainting.com/service-areas/baton-rouge/" class="cm-pt" data-t="baton-rouge"><circle style="fill:#3E3560" cx="40" cy="68" r="7"/><text x="52" y="64">Baton Rouge</text></a>
+          <a href="https://www.bigeasypainting.com/service-areas/hammond/" class="cm-pt" data-t="hammond"><circle style="fill:#3E5C7A" cx="316" cy="45" r="7"/><text x="270" y="30">Hammond</text></a>
+          <a href="https://www.bigeasypainting.com/service-areas/covington/" class="cm-pt" data-t="covington"><circle style="fill:#2F4A3A" cx="460" cy="54" r="7"/><text x="472" y="50">Covington</text></a>
+          <a href="https://www.bigeasypainting.com/service-areas/madisonville/" class="cm-pt" data-t="madisonville"><circle style="fill:#7A4B2E" cx="436" cy="92" r="7"/><text x="330" y="96">Madisonville</text></a>
+          <a href="https://www.bigeasypainting.com/service-areas/mandeville/" class="cm-pt" data-t="mandeville"><circle style="fill:#F1E6CF" cx="476" cy="110" r="7"/><text x="488" y="106">Mandeville</text></a>
+          <a href="https://www.bigeasypainting.com/service-areas/slidell/" class="cm-pt" data-t="slidell"><circle style="fill:#EFB7A6" cx="592" cy="146" r="7"/><text x="566" y="128">Slidell</text></a>
+          <a href="https://www.bigeasypainting.com/service-areas/laplace/" class="cm-pt" data-t="laplace"><circle style="fill:#B6A6D6" cx="308" cy="238" r="7"/><text x="244" y="226">LaPlace</text></a>
+          <a href="https://www.bigeasypainting.com/service-areas/st-rose/" class="cm-pt" data-t="st-rose"><circle style="fill:#1F5C5A" cx="370" cy="292" r="7"/><text x="300" y="316">St. Rose</text></a>
+          <a href="https://www.bigeasypainting.com/service-areas/kenner/" class="cm-pt" data-t="kenner"><circle style="fill:#A8D5BA" cx="404" cy="272" r="7"/><text x="388" y="262">Kenner</text></a>
+          <g class="cm-pt cm-home"><circle cx="472" cy="292" r="9"/><text x="486" y="288">New Orleans</text></g>
+          <a href="https://www.bigeasypainting.com/service-areas/gretna/" class="cm-pt" data-t="gretna"><circle style="fill:#D9583B" cx="482" cy="314" r="7"/><text x="494" y="330">Gretna</text></a>
+        </svg>
+      <figcaption>Schematic map, approximate positions. The large gold pin is home base, New Orleans. Each pin matches its town's color above.</figcaption>
+    </figure>
+    </div>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#F2EDE4">
+  <rect y="-2" width="1440" height="16" fill="#1D1A17"/>
+  <g fill="#1D1A17"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
+</svg>
+
+<!-- ===== 9. FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side rv">
+      <span class="eyebrow">Good Questions</span>
+      <h2>Questions We Hear a Lot</h2>
+      <p>Still wondering about something? Our team is happy to talk it through on the phone or during your estimate.</p>
+      <a class="btn btn-ghost" href="tel:+15046082155">Call 504-608-2155</a>
+    </div>
+    <div class="rv">
+      <details class="qa" open>
+        <summary><h3>How Can You Tell if a Painter Is Good in New Orleans?</h3><span class="plus" aria-hidden="true"></span></summary>
+        <div class="ans"><p>Ask whether they're licensed and insured, how they handle prep, and whether they'll share references. Big Easy Painting is licensed and insured, walks you through the plan before work starts, and provides references on request.</p></div>
+      </details>
+      <details class="qa">
+        <summary><h3>How Humid Is Too Humid to Paint?</h3><span class="plus" aria-hidden="true"></span></summary>
+        <div class="ans"><p>It depends on the product. Every paint lists its own limits for temperature, humidity, and dew point on the label. Painting outside those limits can cause slow drying, poor adhesion, and blistering, so on exterior jobs the label sets the rules for the day.</p></div>
+      </details>
+      <details class="qa">
+        <summary><h3>What Is the Best Time of Year to Paint in New Orleans?</h3><span class="plus" aria-hidden="true"></span></summary>
+        <div class="ans"><p>Interior painting works any time of year. Exteriors do best during drier, milder stretches, which is why fall and spring are popular. Your estimate is a good time to talk through timing for your project.</p></div>
+      </details>
+      <details class="qa">
+        <summary><h3>Is It Better to Roll or Spray Exterior Paint?</h3><span class="plus" aria-hidden="true"></span></summary>
+        <div class="ans"><p>Both have a place. Spraying covers large, flat areas quickly. Brushing and rolling work paint into rough or porous surfaces like older wood and brick. Many exterior jobs use a mix, and we'll recommend what suits your home.</p></div>
+      </details>
+      <details class="qa">
+        <summary><h3>Is It Worth Having Kitchen Cabinets Professionally Painted?</h3><span class="plus" aria-hidden="true"></span></summary>
+        <div class="ans"><p>For many homeowners, yes. Cabinets take daily wear, so a lasting finish depends on careful cleaning, sanding, and priming. A professional job gives you an even, durable finish without replacing the cabinets.</p></div>
+      </details>
+      <details class="qa">
+        <summary><h3>Do You Offer Free Estimates?</h3><span class="plus" aria-hidden="true"></span></summary>
+        <div class="ans"><p>Yes. We offer free estimates on site or remotely. Call 504-608-2155 or send the form below and our team will get back to you.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#141210">
+  <rect y="-2" width="1440" height="16" fill="#F2EDE4"/>
+  <g fill="#F2EDE4"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
+</svg>
+
+<!-- ===== 10. ESTIMATE ===== -->
+<section class="estimate" id="estimate">
+  <div class="wrap est-grid">
+    <div class="est-copy rv">
+      <span class="eyebrow">Free Estimate</span>
+      <h2>Let's Get Your Colors <em>on the Wall</em></h2>
+      <p>Tell us about your home or business. Photos help, but they're optional. We'll reach out to set up your free on-site or remote estimate.</p>
+      <a class="big-phone" href="tel:+15046082155"><small>Rather Talk It Through?</small><b>504-608-2155</b></a>
+      <p class="hours">Monday to Friday, 8am to 5pm Central</p>
+    </div>
+    <form class="est rv" id="est-form" novalidate>
+      <h3>Request Your Free Estimate</h3>
+      <p class="sub">Takes about a minute. Fields marked * are required.</p>
+      <div class="fields">
+        <div class="field"><label for="f-name">Full Name *</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-phone">Phone *</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="field full"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <fieldset class="field full"><legend>Property Type *</legend>
+          <div class="seg">
+            <label><input type="radio" name="type" value="Residential" checked><span>Residential</span></label>
+            <label><input type="radio" name="type" value="Commercial"><span>Commercial</span></label>
+          </div>
+        </fieldset>
+        <div class="field full"><label for="f-service">Service</label>
+          <select id="f-service" name="service">
+            <option value="">Choose a service</option>
+            <optgroup label="Residential"><option>Interior Home Painting</option><option>Exterior Home Painting</option><option>Cabinet Painting</option><option>Deck Staining &amp; Painting</option><option>Kitchen Remodel</option><option>Pressure Washing</option></optgroup>
+            <optgroup label="Commercial"><option>Office Painting</option><option>Hospital Painting</option><option>School Painting</option><option>Gym Painting</option><option>Commercial Pressure Washing</option></optgroup>
+          </select></div>
+        <div class="field full"><label for="f-msg">Tell Us About the Project</label><textarea id="f-msg" name="message" placeholder="Rooms, square footage, colors you have in mind, timing..."></textarea></div>
+        <div class="field full"><label for="f-file">Upload Photos or Videos (Optional)</label><input id="f-file" name="files" type="file" multiple accept="image/*,video/*"></div>
+        <label class="consent full field" style="grid-column:1/-1;flex-direction:row"><input type="checkbox" name="sms">Opt in to receive SMS notifications, alerts, and occasional marketing communication.</label>
+        <p class="fine" style="grid-column:1/-1">You agree to receive automated messages. Receive up to 5 messages per month. Reply STOP to opt out or HELP for help. Message &amp; data rates apply. By submitting this form, I consent to receive calls, including automated calls using AI-generated voice technology, from Big Easy Painting at the phone number provided above. Consent is not required as a condition of receiving a quote or service. I can revoke consent at any time.</p>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-coral" type="submit">Send My Request
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <div class="form-msg" id="form-msg" role="status"></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#1D1A17">
+  <rect y="-2" width="1440" height="16" fill="#141210"/>
+  <g fill="#141210"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
+</svg>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="logo-plate"><img src="https://www.bigeasypainting.com/wp-content/uploads/2023/07/logo.png" alt="Big Easy Painting logo" width="186" height="104" loading="lazy"></span>
+        <p class="foot-about">Interior and exterior painting for homes and businesses across greater New Orleans. Licensed and insured.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/people/Big-Easy-Painting/100086797135794/" aria-label="Facebook" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.2V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a>
+          <a href="https://www.instagram.com/bigeasypainting/" aria-label="Instagram" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3 0-4.1.1C4.3 2.3 2.3 4.3 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.2 3.6 2.2 5.6 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.6-.2 5.6-2.2 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.2-3.6-2.2-5.6-5.8-5.8C15 2 14.7 2 12 2zm0 1.8c2.7 0 3 0 4 .1 2.7.1 3.9 1.4 4.1 4.1.1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.7-1.4 3.9-4.1 4.1-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.7-.1-3.9-1.4-4.1-4.1-.1-1-.1-1.3-.1-4s0-3 .1-4C4 5.3 5.3 4 8 3.9c1-.1 1.3-.1 4-.1z"/></svg></a>
+          <a href="https://twitter.com/BigEasyPainting" aria-label="X (Twitter)" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a>
+          <a href="https://www.linkedin.com/company/big-easy-painting/" aria-label="LinkedIn" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Residential</h4>
+        <ul>
+          <li><a href="https://www.bigeasypainting.com/residential/interior-home-painting/">Interior Home Painting</a></li>
+          <li><a href="https://www.bigeasypainting.com/residential/exterior-home-painting/">Exterior Home Painting</a></li>
+          <li><a href="https://www.bigeasypainting.com/residential/cabinet-painting/">Cabinet Painting</a></li>
+          <li><a href="https://www.bigeasypainting.com/residential/deck-staining-painting/">Deck Staining &amp; Painting</a></li>
+          <li><a href="https://www.bigeasypainting.com/residential/kitchen-remodel/">Kitchen Remodel</a></li>
+          <li><a href="https://www.bigeasypainting.com/residential/pressure-washing/">Pressure Washing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Commercial</h4>
+        <ul>
+          <li><a href="https://www.bigeasypainting.com/commercial/office-painting/">Office Painting</a></li>
+          <li><a href="https://www.bigeasypainting.com/commercial/hospital-painting/">Hospital Painting</a></li>
+          <li><a href="https://www.bigeasypainting.com/commercial/school-painting/">School Painting</a></li>
+          <li><a href="https://www.bigeasypainting.com/commercial/gym-painting/">Gym Painting</a></li>
+          <li><a href="https://www.bigeasypainting.com/commercial/pressure-washing/">Commercial Pressure Washing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+15046082155">504-608-2155</a></li>
+          <li>Mon to Fri, 8am to 5pm</li>
+          <li>Sat and Sun, Closed</li>
+          <li>New Orleans, LA</li>
+          <li><a href="https://www.bigeasypainting.com/contact/">Contact Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Big Easy Painting. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+
+<dialog class="est-modal" id="est-modal" aria-labelledby="m-title">
+  <button class="modal-x" type="button" aria-label="Close the estimate form">&times;</button>
+  <form class="est" id="est-form-m" novalidate>
+      <h3 id="m-title">Request Your Free Estimate</h3>
+      <p class="sub">Takes about a minute. Fields marked * are required.</p>
+      <div class="fields">
+        <div class="field"><label for="f-name-m">Full Name *</label><input id="f-name-m" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-phone-m">Phone *</label><input id="f-phone-m" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="field full"><label for="f-email-m">Email *</label><input id="f-email-m" name="email" type="email" autocomplete="email" required></div>
+        <fieldset class="field full"><legend>Property Type *</legend>
+          <div class="seg">
+            <label><input type="radio" name="type" value="Residential" checked><span>Residential</span></label>
+            <label><input type="radio" name="type" value="Commercial"><span>Commercial</span></label>
+          </div>
+        </fieldset>
+        <div class="field full"><label for="f-service-m">Service</label>
+          <select id="f-service-m" name="service">
+            <option value="">Choose a service</option>
+            <optgroup label="Residential"><option>Interior Home Painting</option><option>Exterior Home Painting</option><option>Cabinet Painting</option><option>Deck Staining &amp; Painting</option><option>Kitchen Remodel</option><option>Pressure Washing</option></optgroup>
+            <optgroup label="Commercial"><option>Office Painting</option><option>Hospital Painting</option><option>School Painting</option><option>Gym Painting</option><option>Commercial Pressure Washing</option></optgroup>
+          </select></div>
+        <div class="field full"><label for="f-msg-m">Tell Us About the Project</label><textarea id="f-msg-m" name="message" placeholder="Rooms, square footage, colors you have in mind, timing..."></textarea></div>
+        <div class="field full"><label for="f-file-m">Upload Photos or Videos (Optional)</label><input id="f-file-m" name="files" type="file" multiple accept="image/*,video/*"></div>
+        <label class="consent full field" style="grid-column:1/-1;flex-direction:row"><input type="checkbox" name="sms">Opt in to receive SMS notifications, alerts, and occasional marketing communication.</label>
+        <p class="fine" style="grid-column:1/-1">You agree to receive automated messages. Receive up to 5 messages per month. Reply STOP to opt out or HELP for help. Message &amp; data rates apply. By submitting this form, I consent to receive calls, including automated calls using AI-generated voice technology, from Big Easy Painting at the phone number provided above. Consent is not required as a condition of receiving a quote or service. I can revoke consent at any time.</p>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-coral" type="submit">Send My Request
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <div class="form-msg" id="form-msg-m" role="status"></div>
+      </div>
+    </form>
+</dialog>
+
+
+<!-- ===== Back to top ===== -->
+<button class="to-top" id="to-top" type="button" aria-label="Back to top">
+  <svg class="ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" class="ring-bg"/><circle cx="24" cy="24" r="22" class="ring-fg" id="to-top-ring"/></svg>
+  <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<!-- ===== Chat assistant (scripted prototype: answers from site facts only, never quotes prices) ===== -->
+<button class="chat-launch" id="chat-launch" type="button" aria-expanded="false" aria-controls="chat-panel">
+  <span class="chat-tip">Questions? Chat with us</span>
+  <svg class="ic-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg>
+  <svg class="ic-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  <span class="sr-label">Open chat</span>
+</button>
+<section class="chat-panel" id="chat-panel" role="dialog" aria-modal="false" aria-labelledby="chat-title" hidden>
+  <header class="chat-head">
+    <span class="chat-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="13" height="6" rx="1.5"/><path d="M16 7h3v5h-8v3"/><rect x="9.5" y="15" width="3" height="6" rx="1"/></svg></span>
+    <div><h2 id="chat-title">Big Easy Painting</h2><p>Automated helper. Our team answers calls Mon to Fri, 8am to 5pm Central.</p></div>
+    <button class="chat-x" id="chat-x" type="button" aria-label="Close chat">&times;</button>
+  </header>
+  <div class="chat-log" id="chat-log" role="log" aria-live="polite"></div>
+  <div class="chat-chips" id="chat-chips"></div>
+  <form class="chat-form" id="chat-form" autocomplete="off">
+    <label class="sr-label" for="chat-input">Type your question</label>
+    <input id="chat-input" type="text" placeholder="Ask about services, areas, hours..." maxlength="200">
+    <button type="submit" aria-label="Send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </form>
+</section>
+
+<div class="callbar">
+  <a class="btn btn-light" href="tel:+15046082155">Call Now</a>
+  <a class="btn btn-coral" href="#estimate" data-open-estimate>Free Estimate</a>
+</div>
+
+<script>
+(function(){
+  // Mobile menu
+  var burger=document.querySelector('.burger'), menu=document.getElementById('menu');
+  burger.addEventListener('click',function(){
+    var open=burger.getAttribute('aria-expanded')==='true';
+    burger.setAttribute('aria-expanded',String(!open));
+    burger.setAttribute('aria-label',open?'Open menu':'Close menu');
+    menu.classList.toggle('open',!open);
+  });
+  function setMenuClosed(){menu.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Open menu');}
+  menu.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){menu.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Open menu');}
+  });
+
+  // Hero background video: pause button, and no motion for people who ask for less
+  var hv=document.getElementById('hero-video'), vt=document.getElementById('video-toggle');
+  function setVideo(play){
+    if(play){var p=hv.play(); if(p&&p.catch)p.catch(function(){});} else hv.pause();
+    vt.setAttribute('aria-pressed',String(!play));
+    document.getElementById('vt-label').textContent=play?'Pause Video':'Play Video';
+    document.getElementById('vt-icon').setAttribute('d',play?'M6 5h4v14H6zM14 5h4v14h-4z':'M7 4l13 8-13 8z');
+  }
+  vt.addEventListener('click',function(){setVideo(hv.paused)});
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){hv.removeAttribute('autoplay');setVideo(false);}
+
+  // House color picker
+  var root=document.documentElement, chips=document.querySelectorAll('.chip');
+  var nameEl=document.getElementById('scheme-name'), codeEl=document.getElementById('scheme-code');
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      chips.forEach(function(x){x.setAttribute('aria-pressed','false')});
+      c.setAttribute('aria-pressed','true');
+      ['body','trim','shutter','door'].forEach(function(k){root.style.setProperty('--'+k,c.dataset[k])});
+      nameEl.textContent=c.dataset.name;
+      codeEl.textContent=c.dataset.code+' · Body / Trim / Shutters / Door';
+    });
+  });
+
+  // Room Study picker (from Option D)
+  var roomSec=document.getElementById('room');
+  roomSec.querySelectorAll('.rsw').forEach(function(b){
+    b.addEventListener('click',function(){
+      var k=b.dataset.k;
+      roomSec.querySelectorAll('.rsw[data-k="'+k+'"]').forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+      roomSec.style.setProperty('--'+k,b.dataset.v);
+      document.getElementById('rn-'+k).textContent=b.dataset.n;
+    });
+  });
+
+  // Services preview panel (Option D) with a photo per service
+  var links=document.querySelectorAll('.idx a'), pImg=document.getElementById('p-img');
+  function preview(a){
+    links.forEach(function(x){x.classList.toggle('on',x===a)});
+    document.getElementById('p-name').textContent=a.querySelector('h3').textContent;
+    document.getElementById('p-desc').textContent=a.dataset.d;
+    document.getElementById('p-link').href=a.href;
+    document.getElementById('p-ic').innerHTML=a.querySelector('.ic').innerHTML;
+    if(pImg.getAttribute('src')!==a.dataset.img){
+      pImg.classList.add('fade');
+      setTimeout(function(){pImg.src=a.dataset.img;pImg.alt=a.dataset.alt;},180);
+    }
+  }
+  pImg.addEventListener('load',function(){pImg.classList.remove('fade')});
+  links.forEach(function(a){a.addEventListener('mouseenter',function(){preview(a)});a.addEventListener('focus',function(){preview(a)});});
+  // warm the cache so hover swaps feel instant
+  // one photo at a time, after the page has loaded, so it never competes with the hero video
+  window.addEventListener('load',function(){
+    var q=[].map.call(links,function(a){return a.dataset.img}), n=0;
+    (function next(){ if(n>=q.length) return; var i=new Image(); i.onload=i.onerror=function(){setTimeout(next,150)}; i.src=q[n++]; })();
+  });
+
+  // Service areas: town pills and map pins highlight each other (from Option C)
+  document.querySelectorAll('#areas [data-t]').forEach(function(el){
+    function hl(on){
+      document.querySelectorAll('#areas [data-t="'+el.dataset.t+'"]').forEach(function(x){
+        if(x.classList.contains('cm-pt')){x.querySelector('circle').setAttribute('r',on?11:7);x.classList.toggle('hot',on);}
+        else x.classList.toggle('hot',on);
+      });
+    }
+    el.addEventListener('mouseenter',function(){hl(true)});
+    el.addEventListener('mouseleave',function(){hl(false)});
+    el.addEventListener('focus',function(){hl(true)});
+    el.addEventListener('blur',function(){hl(false)});
+  });
+
+  // ===== Back to top (with scroll-progress ring) =====
+  var toTop=document.getElementById('to-top'), ring=document.getElementById('to-top-ring'), RING=138.2;
+  function onScrollTop(){
+    var max=document.documentElement.scrollHeight-window.innerHeight, y=window.scrollY||window.pageYOffset;
+    toTop.classList.toggle('show', y>600);
+    ring.style.strokeDashoffset = RING - RING*Math.min(1, max>0 ? y/max : 0);
+  }
+  window.addEventListener('scroll',onScrollTop,{passive:true}); onScrollTop();
+  toTop.addEventListener('click',function(){
+    var smooth=!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({top:0,behavior:smooth?'smooth':'auto'});
+    var skip=document.querySelector('.brand'); if(skip) setTimeout(function(){skip.focus({preventScroll:true})},smooth?600:0);
+  });
+
+  // ===== Chat assistant: scripted answers from the site's own facts (no prices, no data stored) =====
+  var launch=document.getElementById('chat-launch'), panel=document.getElementById('chat-panel'),
+      log=document.getElementById('chat-log'), chips=document.getElementById('chat-chips'),
+      cform=document.getElementById('chat-form'), cinput=document.getElementById('chat-input'), started=false;
+  var R='https://www.bigeasypainting.com/residential/', C='https://www.bigeasypainting.com/commercial/', A='https://www.bigeasypainting.com/service-areas/';
+  var EST='<div class="acts"><a class="btn btn-coral" href="#estimate" data-chat-estimate>Request a Free Estimate</a><a class="btn btn-call" href="tel:+15046082155">Call 504-608-2155</a></div>';
+  var SERV={
+    'interior':['Interior Home Painting',R+'interior-home-painting/','kitchens, living rooms, bedrooms, bathrooms, hallways, foyers, doors, and windows'],
+    'exterior':['Exterior Home Painting',R+'exterior-home-painting/','siding, brick, trim, and front doors, prepped to stand up to heat, rain, and humidity'],
+    'cabinet':['Cabinet Painting',R+'cabinet-painting/','a durable, refinished look for kitchen and bathroom cabinets'],
+    'deck':['Deck Staining & Painting',R+'deck-staining-painting/','stain or paint that protects the wood and keeps your deck looking good all year'],
+    'kitchen':['Kitchen Remodel',R+'kitchen-remodel/','kitchen updates from cabinets to walls'],
+    'office':['Office Painting',C+'office-painting/','workspaces painted on a schedule built around your team'],
+    'hospital':['Hospital Painting',C+'hospital-painting/','medical spaces with clean lines and durable, washable finishes'],
+    'school':['School Painting',C+'school-painting/','classrooms, hallways, and common areas with finishes made for heavy use'],
+    'gym':['Gym Painting',C+'gym-painting/','walls built to take sweat, scuffs, and constant foot traffic']
+  };
+  var TOWNS={'kenner':'kenner','gretna':'gretna','st. rose':'st-rose','st rose':'st-rose','saint rose':'st-rose','laplace':'laplace','la place':'laplace','slidell':'slidell','mandeville':'mandeville','covington':'covington','madisonville':'madisonville','hammond':'hammond','baton rouge':'baton-rouge'};
+  var TOWN_NAMES={'kenner':'Kenner','gretna':'Gretna','st-rose':'St. Rose','laplace':'LaPlace','slidell':'Slidell','mandeville':'Mandeville','covington':'Covington','madisonville':'Madisonville','hammond':'Hammond','baton-rouge':'Baton Rouge'};
+  var CHIPS=['Get a free estimate','What do you paint?','Areas you serve','Hours and phone'];
+  function has(t,words){return words.some(function(w){return t.indexOf(w)>-1})}
+  function answer(raw){
+    var t=' '+raw.toLowerCase().replace(/[^a-z0-9.\s']/g,' ')+' ';
+    if(has(t,['price','cost','how much','quote','estimate','charge','budget','rate','afford'])) return 'Every project is different, so we price it after a free estimate, on site or remote. Want to request one?'+EST;
+    if(has(t,['pressure','power wash','wash'])) return 'Yes, we pressure wash. For homes: siding, driveways, and decks, as prep before paint or on its own (<a href="'+R+'pressure-washing/">residential</a>). For businesses: storefronts, walkways, and building exteriors (<a href="'+C+'pressure-washing/">commercial</a>).';
+    for(var k in SERV){ if(t.indexOf(k)>-1){ var s=SERV[k]; return 'Yes, we offer <a href="'+s[1]+'">'+s[0]+'</a>: '+s[2]+'.'+EST; } }
+    for(var town in TOWNS){ if(t.indexOf(town)>-1){ var slug=TOWNS[town]; return 'Yes, we paint in <a href="'+A+slug+'/">'+TOWN_NAMES[slug]+'</a>. We are based in New Orleans and travel across the region.'+EST; } }
+    var OTHER=['metairie','chalmette','harvey','marrero','westwego','algiers','belle chasse','river ridge','harahan','destrehan','luling','ponchatoula','abita','lacombe','gonzales','prairieville','houma','thibodaux'];
+    for(var o=0;o<OTHER.length;o++){ if(t.indexOf(OTHER[o])>-1){ var nm=OTHER[o].replace(/(^|\s)\w/g,function(c){return c.toUpperCase()}); return nm+" isn't on our listed service areas, but we may still be able to help. Please call <a href=\"tel:+15046082155\">504-608-2155</a> to ask."; } }
+    if(has(t,['new orleans','nola','orleans'])) return 'New Orleans is our home base, so yes. We also cover Kenner, Gretna, St. Rose, LaPlace, Slidell, Mandeville, Covington, Madisonville, Hammond, and Baton Rouge.'+EST;
+    if(has(t,['area','serve','service area','where','town','city','location','near'])) return 'We are based in New Orleans and paint across the region:<ul><li>Kenner, Gretna, St. Rose, LaPlace</li><li>Slidell, Mandeville, Covington, Madisonville</li><li>Hammond and Baton Rouge</li></ul>Don\'t see your town? Call <a href="tel:+15046082155">504-608-2155</a> and ask.';
+    if(has(t,['hour','open','close','when are','weekend','saturday','sunday'])) return 'Our team is available Monday to Friday, 8am to 5pm Central. We are closed Saturday and Sunday. You can request an estimate here any time.'+EST;
+    if(has(t,['humid','weather','rain','moisture'])) return 'It depends on the product. Every paint lists its own limits for temperature, humidity, and dew point on the label. Painting outside those limits can cause slow drying, poor adhesion, and blistering, so on exterior jobs the label sets the rules for the day.';
+    if(has(t,['season','time of year','best time','month'])) return 'Interior painting works any time of year. Exteriors do best during drier, milder stretches, which is why fall and spring are popular. Your estimate is a good time to talk through timing.';
+    if(has(t,['license','insur'])) return 'Yes. Big Easy Painting is licensed and insured, and we can share references on request.';
+    if(has(t,['reference','review','testimonial'])) return 'We are happy to share references on request. You can also read what clients say in the reviews section of this page.';
+    if(has(t,['eco','green','low voc','voc','environment','sustainab'])) return 'Yes, we offer eco-friendly paint options. Mention it in your estimate request and we will walk you through the choices.'+EST;
+    if(has(t,['color','colour','choose','pick'])) return 'We help with colors and finishes during your estimate. You can also try the color pickers on this page: the shotgun house up top and the living room further down.';
+    if(has(t,['service','paint','what do you','offer','do you do','commercial','residential','business','home'])) return 'Here is what we do:<ul><li><b>Homes:</b> interior, exterior, cabinets, decks, kitchen remodels, pressure washing</li><li><b>Businesses:</b> offices, hospitals, schools, gyms, pressure washing</li></ul>Ask about any of them, or <a href="'+R+'">see residential</a> and <a href="'+C+'">commercial</a> services.';
+    if(has(t,['phone','call','talk','person','human','someone','contact','number','email'])) return 'You can reach our team at <a href="tel:+15046082155">504-608-2155</a>, Monday to Friday, 8am to 5pm Central. Or send a request and we will get back to you.'+EST;
+    if(has(t,[' hi ',' hello',' hey','good morning','good afternoon'])) return 'Hi there! Ask me about our services, the areas we cover, hours, or getting a free estimate.';
+    if(has(t,['thank'])) return 'You are welcome! Anything else I can help with?';
+    return 'I am a simple helper, so I can only answer basic questions about services, areas, hours, and estimates. For anything else, our team can help at <a href="tel:+15046082155">504-608-2155</a>.'+EST;
+  }
+  function add(html,who){
+    var d=document.createElement('div'); d.className='msg '+who;
+    if(who==='me') d.textContent=html; else d.innerHTML=html;
+    log.appendChild(d); log.scrollTop=log.scrollHeight;
+    d.querySelectorAll('[data-chat-estimate]').forEach(function(b){
+      b.addEventListener('click',function(e){ e.preventDefault(); closeChat(); var m=document.getElementById('est-modal'); if(m&&m.showModal){ m.showModal(); document.documentElement.classList.add('modal-open'); var f=m.querySelector('input'); if(f) f.focus(); } else location.hash='estimate'; });
+    });
+  }
+  function bot(html){
+    var typing=document.createElement('div'); typing.className='msg bot typing'; typing.innerHTML='<i></i><i></i><i></i>';
+    typing.setAttribute('aria-label','Typing'); log.appendChild(typing); log.scrollTop=log.scrollHeight;
+    setTimeout(function(){ typing.remove(); add(html,'bot'); }, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 550);
+  }
+  function ask(text){ text=(text||'').trim(); if(!text) return; add(text,'me'); bot(answer(text)); }
+  function renderChips(){ chips.innerHTML=''; CHIPS.forEach(function(c){ var b=document.createElement('button'); b.type='button'; b.textContent=c; b.addEventListener('click',function(){ask(c)}); chips.appendChild(b); }); }
+  function openChat(){
+    panel.hidden=false; launch.setAttribute('aria-expanded','true'); launch.classList.remove('tease'); toTop.classList.add('chat-on');
+    launch.querySelector('.sr-label').textContent='Close chat';
+    if(!started){ started=true; renderChips(); add('Hi! I can help with quick questions about Big Easy Painting: services, the areas we cover, hours, and free estimates. What can I help with?','bot'); }
+    setTimeout(function(){cinput.focus()},50);
+  }
+  function closeChat(){ toTop.classList.remove('chat-on'); panel.hidden=true; launch.setAttribute('aria-expanded','false'); launch.querySelector('.sr-label').textContent='Open chat'; }
+  launch.addEventListener('click',function(){ panel.hidden ? openChat() : (closeChat(), launch.focus()); });
+  document.getElementById('chat-x').addEventListener('click',function(){ closeChat(); launch.focus(); });
+  panel.addEventListener('keydown',function(e){ if(e.key==='Escape'){ closeChat(); launch.focus(); } });
+  cform.addEventListener('submit',function(e){ e.preventDefault(); ask(cinput.value); cinput.value=''; });
+  // a gentle hint once, a few seconds after load
+  setTimeout(function(){ if(panel.hidden){ launch.classList.add('tease'); setTimeout(function(){launch.classList.remove('tease')},4000); } },6000);
+
+  // Scroll reveals
+  var targets=document.querySelectorAll('.rv, #layers, #roller');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+    targets.forEach(function(t){io.observe(t)});
+  } else {
+    targets.forEach(function(t){t.classList.add('in')});
+  }
+
+  // Prototype forms (section form + popup form): validate, do not send anywhere
+  document.querySelectorAll('form.est').forEach(function(form){
+    var msg=form.querySelector('.form-msg');
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var bad=[].slice.call(form.querySelectorAll('[required]')).filter(function(f){return !f.checkValidity()});
+      if(bad.length){
+        msg.style.background='#FBE3DC';msg.style.color='#8A2E1A';
+        msg.textContent='Please fill in your name, phone, and a valid email.';
+        msg.classList.add('show');bad[0].focus();return;
+      }
+      msg.style.background='';msg.style.color='';
+      msg.textContent='Thanks! This is a design prototype, so nothing was sent. On the live site, this goes to the Big Easy Painting team.';
+      msg.classList.add('show');
+    });
+  });
+
+  // Every "Free Estimate" button opens the estimate form in a popup
+  var modal=document.getElementById('est-modal'), lastTrigger=null;
+  if(modal && typeof modal.showModal==='function'){
+    document.querySelectorAll('[data-open-estimate]').forEach(function(btn){
+      btn.addEventListener('click',function(e){
+        e.preventDefault(); lastTrigger=btn;
+        if(menu.classList.contains('open')) setMenuClosed();
+        modal.showModal(); document.documentElement.classList.add('modal-open');
+        var first=modal.querySelector('input'); if(first) first.focus();
+      });
+    });
+    modal.querySelector('.modal-x').addEventListener('click',function(){modal.close()});
+    modal.addEventListener('click',function(e){ if(e.target===modal) modal.close(); }); // click outside the form
+    modal.addEventListener('close',function(){
+      document.documentElement.classList.remove('modal-open');
+      if(lastTrigger) lastTrigger.focus();
+    });
+  }
+})();
+</script>
+</body>
+</html>
