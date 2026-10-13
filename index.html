@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>New Orleans Interior &amp; Exterior Painting Contractor | Big Easy Painting</title>
-<meta name="description" content="Big Easy Painting provides interior and exterior painting for homes and businesses across greater New Orleans. Licensed, insured, and free estimates on site or remote.">
+<title>New Orleans Interior &amp; Exterior Painting | Big Easy Painting</title>
+<meta name="description" content="Big Easy Painting provides top-quality interior and exterior painting services for commercial and residential properties in New Orleans. Contact us today!">
 <link rel="icon" href="https://www.bigeasypainting.com/wp-content/uploads/2022/07/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -729,6 +729,23 @@ html.modal-open{overflow:hidden}
   .chat-tip{display:none}
 }
 @media (prefers-reduced-motion:reduce){.msg.typing i{animation:none}}
+
+/* Nav with 8 items (About and Paint Color Selection added, as on the live site): logo, labels and buttons never squeeze or wrap */
+.brand,.brand-logo,.nav-cta,.nav-cta .btn,.nav-phone{flex:none}
+.menu a,.nav-cta .btn,.nav-phone{white-space:nowrap}
+@media (min-width:901px){ .menu{gap:20px} .menu a{font-size:12.5px;letter-spacing:.07em} }
+@media (min-width:901px) and (max-width:1340px){ .nav-phone{display:none} }
+@media (min-width:1341px){ .menu{gap:14px} .menu a{letter-spacing:.045em} .nav-cta{gap:14px} .nav{gap:16px} }
+@media (min-width:1121px) and (max-width:1200px){ .menu{gap:15px} .menu a{font-size:12px;letter-spacing:.05em} .nav-cta .btn{padding-left:16px;padding-right:16px} }
+/* 901-1120: too narrow for 8 items, so use the same drop-down menu as phones (the Free Estimate button stays) */
+@media (min-width:901px) and (max-width:1120px){
+  .burger{display:block}
+  .menu{position:fixed;inset:76px 0 auto 0;background:var(--black);flex-direction:column;align-items:flex-start;gap:0;padding:8px var(--gut) 22px;border-bottom:1px solid rgba(201,163,91,.22);transform:translateY(-130%);transition:transform .35s ease;z-index:-1}
+  .menu.open{transform:none}
+  .menu li{width:100%;border-bottom:1px solid var(--line-d)}
+  .menu a{display:block;padding:15px 0;font-size:14px;letter-spacing:.16em}
+  .menu a::after{display:none}
+}
 </style>
 </head>
 <body>
@@ -739,12 +756,14 @@ html.modal-open{overflow:hidden}
       <img class="brand-logo" src="https://www.bigeasypainting.com/wp-content/uploads/2023/07/logo.png" alt="Big Easy Painting logo" width="186" height="104">
     </a>
     <ul class="menu" id="menu">
-      <li><a href="https://www.bigeasypainting.com/residential/">Residential</a></li>
-      <li><a href="https://www.bigeasypainting.com/commercial/">Commercial</a></li>
-      <li><a href="#areas">Service Areas</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="residential.html">Residential</a></li>
+      <li><a href="commercial.html">Commercial</a></li>
+      <li><a href="paint-color-selection.html">Paint Color Selection</a></li>
+      <li><a href="service-areas.html">Service Areas</a></li>
       <li><a href="#work">Our Work</a></li>
-      <li><a href="https://www.bigeasypainting.com/blog/">Blog</a></li>
-      <li><a href="https://www.bigeasypainting.com/contact/">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="nav-cta">
       <a class="nav-phone" href="tel:+15046082155">504-608-2155</a>
@@ -1433,8 +1452,10 @@ html.modal-open{overflow:hidden}
     document.getElementById('vt-label').textContent=play?'Pause Video':'Play Video';
     document.getElementById('vt-icon').setAttribute('d',play?'M6 5h4v14H6zM14 5h4v14h-4z':'M7 4l13 8-13 8z');
   }
+  if(hv&&vt){
   vt.addEventListener('click',function(){setVideo(hv.paused)});
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){hv.removeAttribute('autoplay');setVideo(false);}
+  }
 
   // House color picker
   var root=document.documentElement, chips=document.querySelectorAll('.chip');
@@ -1458,7 +1479,7 @@ html.modal-open{overflow:hidden}
 
   // Room Study picker (from Option D)
   var roomSec=document.getElementById('room');
-  roomSec.querySelectorAll('.rsw').forEach(function(b){
+  if(roomSec) roomSec.querySelectorAll('.rsw').forEach(function(b){
     b.addEventListener('click',function(){
       var k=b.dataset.k;
       roomSec.querySelectorAll('.rsw[data-k="'+k+'"]').forEach(function(x){x.setAttribute('aria-pressed','false')});
@@ -1482,11 +1503,11 @@ html.modal-open{overflow:hidden}
       setTimeout(function(){pImg.src=a.dataset.img;pImg.alt=a.dataset.alt;},180);
     }
   }
-  pImg.addEventListener('load',function(){pImg.classList.remove('fade')});
+  if(pImg) pImg.addEventListener('load',function(){pImg.classList.remove('fade')});
   links.forEach(function(a){a.addEventListener('mouseenter',function(){preview(a)});a.addEventListener('focus',function(){preview(a)});});
   // warm the cache so hover swaps feel instant
   // one photo at a time, after the page has loaded, so it never competes with the hero video
-  window.addEventListener('load',function(){
+  if(pImg) window.addEventListener('load',function(){
     var q=[].map.call(links,function(a){return a.dataset.img}), n=0;
     (function next(){ if(n>=q.length) return; var i=new Image(); i.onload=i.onerror=function(){setTimeout(next,150)}; i.src=q[n++]; })();
   });

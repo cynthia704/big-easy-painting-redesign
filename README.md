@@ -1,6 +1,10 @@
-# Big Easy Painting: Homepage Redesign (Prototype)
+# Big Easy Painting: Site Redesign (Prototype)
 
 Design prototype for bigeasypainting.com. Not the live site.
-The page is set to noindex and robots.txt blocks crawlers.
+Every page is set to noindex and robots.txt blocks crawlers.
 
-Source: redesign/combined.html (copied here as index.html).
+Pages: index (homepage), about, residential, commercial, paint-color-selection,
+service-areas, blog, contact.
+
+Source: the redesign/ folder. combined.html is copied here as index.html, and
+links to combined.html are rewritten to ./ on publish.
