@@ -109,8 +109,6 @@ header.site{position:sticky;top:0;z-index:50;background:rgba(243,238,228,.92);ba
 .house-stage .h-trim-s{stroke:var(--trim)}
 .house-stage .h-shut{fill:var(--shutter)}
 .house-stage .h-door{fill:var(--door)}
-.house-stage .h-body,.house-stage .h-trim,.house-stage .h-shut,.house-stage .h-door{transition:fill .7s ease}
-.house-stage .h-trim-s{transition:stroke .7s ease}
 .now{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:14px 2px 12px;font-size:14px}
 .now strong{font-family:var(--serif);font-size:24px;font-weight:400}
 .now .code{font-family:var(--mono);font-size:12px;color:var(--ink-3)}
@@ -202,8 +200,8 @@ header.site{position:sticky;top:0;z-index:50;background:rgba(243,238,228,.92);ba
 .room-copy p{color:#5A534A;margin:22px 0 30px;font-size:17px}
 .room-stage{background:#fff;padding:14px;box-shadow:0 30px 60px -36px rgba(20,18,16,.55)}
 .room-stage svg{width:100%;height:auto;display:block}
-.room-stage .rm-wall{fill:var(--rwall);transition:fill .8s ease}
-.room-stage .rm-trim{fill:var(--rtrim);transition:fill .8s ease}
+.room-stage .rm-wall{fill:var(--rwall)}
+.room-stage .rm-trim{fill:var(--rtrim)}
 .room-picker h3{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#7D7569;margin:0 0 12px}
 .rsw-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
 .rsw{width:54px;height:54px;border-radius:50%;border:1px solid rgba(20,18,16,.18);cursor:pointer;padding:0;position:relative;transition:transform .2s}
@@ -1448,6 +1446,13 @@ html.modal-open{overflow:hidden}
       chips.forEach(function(x){x.setAttribute('aria-pressed','false')});
       c.setAttribute('aria-pressed','true');
       ['body','trim','shutter','door'].forEach(function(k){root.style.setProperty('--'+k,c.dataset[k])});
+      // paint each part directly so every click repaints instantly in every browser
+      var house=document.querySelector('.house-stage');
+      house.querySelectorAll('.h-body').forEach(function(e){e.style.fill=c.dataset.body});
+      house.querySelectorAll('.h-trim').forEach(function(e){e.style.fill=c.dataset.trim});
+      house.querySelectorAll('.h-trim-s').forEach(function(e){e.style.stroke=c.dataset.trim});
+      house.querySelectorAll('.h-shut').forEach(function(e){e.style.fill=c.dataset.shutter});
+      house.querySelectorAll('.h-door').forEach(function(e){e.style.fill=c.dataset.door});
       nameEl.textContent=c.dataset.name;
       codeEl.textContent=c.dataset.code+' · Body / Trim / Shutters / Door';
     });
@@ -1461,6 +1466,7 @@ html.modal-open{overflow:hidden}
       roomSec.querySelectorAll('.rsw[data-k="'+k+'"]').forEach(function(x){x.setAttribute('aria-pressed','false')});
       b.setAttribute('aria-pressed','true');
       roomSec.style.setProperty('--'+k,b.dataset.v);
+      roomSec.querySelectorAll(k==='rwall'?'.rm-wall':'.rm-trim').forEach(function(e){e.style.fill=b.dataset.v});
       document.getElementById('rn-'+k).textContent=b.dataset.n;
     });
   });
@@ -1517,7 +1523,7 @@ html.modal-open{overflow:hidden}
 
   // ===== Chat assistant: scripted answers from the site's own facts (no prices, no data stored) =====
   var launch=document.getElementById('chat-launch'), panel=document.getElementById('chat-panel'),
-      log=document.getElementById('chat-log'), chips=document.getElementById('chat-chips'),
+      log=document.getElementById('chat-log'), chatChips=document.getElementById('chat-chips'),
       cform=document.getElementById('chat-form'), cinput=document.getElementById('chat-input'), started=false;
   var R='https://www.bigeasypainting.com/residential/', C='https://www.bigeasypainting.com/commercial/', A='https://www.bigeasypainting.com/service-areas/';
   var EST='<div class="acts"><a class="btn btn-coral" href="#estimate" data-chat-estimate>Request a Free Estimate</a><a class="btn btn-call" href="tel:+15046082155">Call 504-608-2155</a></div>';
@@ -1573,7 +1579,7 @@ html.modal-open{overflow:hidden}
     setTimeout(function(){ typing.remove(); add(html,'bot'); }, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 550);
   }
   function ask(text){ text=(text||'').trim(); if(!text) return; add(text,'me'); bot(answer(text)); }
-  function renderChips(){ chips.innerHTML=''; CHIPS.forEach(function(c){ var b=document.createElement('button'); b.type='button'; b.textContent=c; b.addEventListener('click',function(){ask(c)}); chips.appendChild(b); }); }
+  function renderChips(){ chatChips.innerHTML=''; CHIPS.forEach(function(c){ var b=document.createElement('button'); b.type='button'; b.textContent=c; b.addEventListener('click',function(){ask(c)}); chatChips.appendChild(b); }); }
   function openChat(){
     panel.hidden=false; launch.setAttribute('aria-expanded','true'); launch.classList.remove('tease'); toTop.classList.add('chat-on');
     launch.querySelector('.sr-label').textContent='Close chat';
