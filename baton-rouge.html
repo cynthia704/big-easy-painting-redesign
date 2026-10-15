@@ -936,40 +936,89 @@ html.modal-open{overflow:hidden}
 .dv-diy li::before{content:"\2715";background:#9C3B33}
 .dv-pro li::before{content:"\2713";background:#2F5D3A}
 .dv-pro{background-color:#F6F1E6}
-/* S7 All About {Town}: three blocks (layout per Cynthia, modeled on the Big Easy Lighting town pages) */
+/* S7 All About {Town}: painting-niche gallery (paint chips, framed paintings, museum placards, portraits, sketchbook, brushstroke route) */
 .ab{padding:clamp(64px,8vw,110px) 0}
 .ab1{background:var(--cloth)}.ab2{background:var(--primer)}.ab3{background:var(--ink);color:#E9E2D5}
-.ab-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,72px);align-items:start}
-.ab-img{position:sticky;top:110px;margin:0;padding:12px;background:var(--paper);box-shadow:0 26px 44px -28px rgba(20,18,16,.6);transform:rotate(-1deg)}
-.ab2 .ab-img{transform:rotate(1deg)}
-.ab-img img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
-.ab-img .tape{position:absolute;width:96px;height:26px;background:rgba(233,221,180,.85);box-shadow:0 2px 4px rgba(0,0,0,.08)}
-.ab-img .t1{top:-10px;left:18px;transform:rotate(-6deg)}.ab-img .t2{top:-10px;right:18px;transform:rotate(5deg)}
-.ab-copy h2{font-size:clamp(34px,3.6vw,52px);margin:10px 0 0}
-.ab3 .ab-copy h2{margin-top:0}
-.ab-copy h2 em{font-style:italic;color:var(--ox)}
-.ab3 .ab-copy h2,.ab3 .ab-h3{color:var(--primer)}
-.ab3 .ab-copy h2 em{color:var(--brass)}
-.ab-lede{margin:18px 0 0;font-size:17px;color:var(--ink-2)}
-.ab-kv{margin:14px 0 0;color:var(--ink-2)}
-.ab-kv b{color:var(--ox);font-weight:700}
-.ab3 .ab-kv{color:#CFC6B9;margin-top:20px}.ab3 .ab-kv b{color:var(--brass)}
-.ab-maplink{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ox);text-decoration:none}
-.ab-maplink svg{width:14px;height:14px}
-.ab-maplink:hover,.ab-maplink:focus-visible{text-decoration:underline;text-underline-offset:3px}
-.ab-h3{margin:34px 0 0;font-size:clamp(24px,2.2vw,30px)}
-.ab-chk{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:14px}
-.ab-chk li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:12px;align-items:start;color:var(--ink-2)}
-.ab-chk li>svg{width:22px;height:22px;padding:4px;border-radius:50%;background:var(--brass);color:#fff;margin-top:1px;box-sizing:border-box}
-.ab-chk b{color:var(--ink);font-weight:700}
-.ab-chk a{color:inherit;text-underline-offset:3px}
-.ab-chk2{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px}
-.ab3 .ab-chk li{color:#CFC6B9}.ab3 .ab-chk b,.ab3 .ab-chk a{color:var(--primer)}
-.ab .cta-row{margin-top:30px}
-.ab-map{position:sticky;top:110px;padding:12px;background:#2A2622;border:1px solid rgba(201,163,91,.35);box-shadow:0 26px 44px -28px rgba(0,0,0,.7)}
-.ab-map iframe{display:block;width:100%;aspect-ratio:4/3.4;border:0;filter:saturate(.85)}
-@media (max-width:1000px){ .ab-grid{grid-template-columns:minmax(0,1fr)} .ab-img,.ab-map{position:static} .ab2 .ab-img{order:-1} .ab-map iframe{aspect-ratio:16/10} .ab-img img{aspect-ratio:16/10} }
-@media (max-width:520px){ .ab-chk2{grid-template-columns:minmax(0,1fr)} }
+.gl{--hand:"Caveat","Segoe Print",cursive}
+.gl h2 em{font-style:italic;color:var(--ox)}
+.ab3 h2,.ab3 .gl-sub{color:var(--primer)}.ab3 h2 em{color:var(--brass)}
+.gl-sub{font-size:clamp(24px,2.2vw,30px);margin:0 0 16px}
+/* fact strip as a fan of paint chips */
+.gl-chips{list-style:none;margin:clamp(26px,3vw,40px) 0 clamp(40px,5vw,64px);padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.6vw,20px)}
+.gl-chip{background:#FBF8F2;padding:0 0 16px;box-shadow:0 16px 28px -22px rgba(20,18,16,.6);display:flex;flex-direction:column}
+.gl-chip:nth-child(odd){transform:rotate(-1.2deg)}.gl-chip:nth-child(even){transform:rotate(1deg)}
+.gl-chip-sw{display:block;height:64px;background:var(--sw);margin-bottom:12px;box-shadow:inset 0 -6px 0 rgba(0,0,0,.08)}
+.gl-chip-k{padding:0 16px;font:700 10.5px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+.gl-chip b{padding:4px 16px 0;font:400 22px/1.15 var(--serif);color:var(--ink)}
+/* gallery wall */
+.gl-wall{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,4.5vw,64px);align-items:start}
+.gl-frame{margin:0;position:relative}
+.gl-canvas{position:relative;display:block;padding:clamp(12px,1.6vw,20px);background:#F7F1E3;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06);
+  border:clamp(12px,1.6vw,18px) solid #B8913F;border-image:linear-gradient(135deg,#E2C27A,#9C7630 30%,#D9B66A 55%,#8A672A 80%,#CDA758) 1;
+  box-shadow:0 30px 50px -30px rgba(20,18,16,.75),inset 0 0 0 1px rgba(0,0,0,.08)}
+.gl-canvas img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;filter:url(#gl-paint) saturate(1.18) contrast(1.06)}
+.gl-canvas::after{content:"";position:absolute;inset:clamp(24px,3.2vw,38px);pointer-events:none;mix-blend-mode:multiply;opacity:.35;
+  background:repeating-linear-gradient(45deg,rgba(80,60,30,.12) 0 1px,transparent 1px 4px),repeating-linear-gradient(-45deg,rgba(80,60,30,.1) 0 1px,transparent 1px 5px)}
+.gl-plaque{display:inline-flex;flex-direction:column;gap:2px;margin:18px 0 0 6%;padding:10px 16px;background:#FBF8F2;border:1px solid rgba(29,26,23,.18);box-shadow:0 8px 16px -12px rgba(20,18,16,.6)}
+.gl-plaque b{font:400 19px var(--serif);color:var(--ink)}
+.gl-plaque span{font:600 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.ab3 .gl-plaque{background:#2A2622;border-color:rgba(201,163,91,.35)}.ab3 .gl-plaque b{color:var(--primer)}.ab3 .gl-plaque span{color:#B3A994}
+.gl-cards{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.gl-card{position:relative;background:#FBF8F2;padding:18px 20px 18px 22px;border-left:5px solid var(--brass);box-shadow:0 14px 26px -22px rgba(20,18,16,.6)}
+.gl-card-no{display:block;font:700 10.5px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ox);margin-bottom:4px}
+.gl-card h3{font-size:22px;margin:0 0 4px}
+.gl-card p{margin:0;font-size:15px;color:var(--ink-2)}
+.gl-land{margin:20px 0 0;color:var(--ink-2)}
+.gl-land b,.gl-transit b{display:block;font:700 11px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ox);margin-bottom:4px}
+.gl-maplink{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ox);text-decoration:none}
+.gl-maplink svg{width:14px;height:14px}
+.gl-maplink:hover,.gl-maplink:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.ab3 .gl-maplink{color:var(--brass)}
+/* portraits + sketchbook */
+.gl-two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,4.5vw,64px);align-items:stretch}
+.gl-people h2{margin:10px 0 24px;font-size:clamp(34px,3.6vw,50px)}
+.gl-portraits{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,24px);text-align:center}
+.gl-oval{display:grid;place-items:center;width:min(100%,150px);aspect-ratio:4/5;margin:0 auto 14px;border-radius:50%;background:radial-gradient(circle at 40% 35%,color-mix(in srgb,var(--pc) 70%,#fff),var(--pc));
+  border:8px solid #B8913F;box-shadow:0 0 0 3px #E2C27A,0 18px 30px -18px rgba(20,18,16,.7);box-sizing:border-box}
+.gl-oval i{font:italic 400 clamp(30px,3vw,44px) var(--serif);color:#FBF6EA;text-shadow:0 2px 6px rgba(0,0,0,.25)}
+.gl-portrait h3{font-size:21px;margin:0 0 4px}
+.gl-portrait p{margin:0;font-size:14px;color:var(--ink-2)}
+.gl-book{position:relative;background:#FFFDF7;padding:clamp(30px,3.4vw,44px) clamp(24px,3vw,40px) clamp(24px,3vw,34px) clamp(44px,4.6vw,60px);
+  background-image:repeating-linear-gradient(180deg,transparent 0 33px,rgba(62,92,122,.16) 33px 34px);box-shadow:0 26px 44px -30px rgba(20,18,16,.55);transform:rotate(.6deg)}
+.gl-book::before{content:"";position:absolute;left:14px;top:18px;bottom:18px;width:10px;background:radial-gradient(circle,#CFC6B9 3px,transparent 3.5px) 0 0/10px 26px}
+.gl-book-tab{position:absolute;top:-14px;right:28px;font:700 11px var(--sans);letter-spacing:.2em;text-transform:uppercase;background:var(--ox);color:#fff;padding:7px 12px}
+.gl-book h2{font-size:clamp(28px,2.8vw,38px);margin:0 0 16px}
+.gl-notes{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.gl-notes li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;font:600 clamp(19px,1.7vw,23px)/1.3 var(--hand);color:#24395C}
+.gl-note-no{font:600 30px/1 var(--hand);color:var(--ox)}
+.gl .cta-row.center{margin-top:clamp(36px,4vw,52px)}
+/* getting here */
+.gl-go{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,4.5vw,64px);align-items:center}
+.gl-go-art{display:grid;gap:18px}
+.gl-route{display:block;width:100%;height:auto;background:#2A2622;border:1px solid rgba(201,163,91,.3);padding:6px}
+.gl-stroke{fill:none;stroke:var(--brass);stroke-width:14;stroke-linecap:round;opacity:.9}
+.gl-stroke2{fill:none;stroke:#E2C27A;stroke-width:3;stroke-linecap:round;stroke-dasharray:2 12;opacity:.8}
+.gl-dot{fill:#F2EDE4;stroke:#6E2B2B;stroke-width:5}.gl-dot-to{fill:#C9A35B;stroke:#F2EDE4}
+.gl-t{font:700 15px "Manrope",sans-serif;fill:#E9E2D5;letter-spacing:.06em}.gl-t-to{fill:#E2C27A;font-size:17px}
+.gl-hw{font:700 12px "Manrope",sans-serif;fill:#B3A994;letter-spacing:.2em}
+.gl-small .gl-canvas img{aspect-ratio:16/9}
+.gl-go-copy h2{margin:10px 0 18px;font-size:clamp(32px,3.4vw,48px)}
+.gl-dirs{list-style:none;margin:0 0 26px;padding:0;display:grid;gap:12px}
+.gl-dirs li{display:grid;gap:2px;padding:14px 18px;background:rgba(242,237,228,.06);border-left:4px solid var(--brass)}
+.gl-dirs b{font:700 11px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--brass)}
+.gl-dirs span{color:#D9D1C3}
+.gl-nears{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.gl-near{display:block;text-align:center;padding:12px 10px;background:#F2EDE4;color:var(--ink);font:700 14px var(--sans);text-decoration:none;box-shadow:inset 0 -5px 0 var(--brass)}
+a.gl-near:hover,a.gl-near:focus-visible{background:var(--brass)}
+.gl-transit{margin:24px 0 0;color:#CFC6B9}
+.gl-transit b{color:var(--brass)}
+.ab3 .btn-call{color:var(--primer);border-color:rgba(242,237,228,.6)}
+.ab3 .btn-call:hover{background:var(--primer);color:var(--ink)}
+.ab3 .eyebrow{color:var(--brass)}
+@media (max-width:1080px){ .gl-chips{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:1000px){ .gl-wall,.gl-two,.gl-go{grid-template-columns:minmax(0,1fr)} }
+@media (max-width:520px){ .gl-portraits{grid-template-columns:minmax(0,1fr)} .gl-oval{width:130px} .gl-nears{grid-template-columns:minmax(0,1fr)} }
+@media (max-width:420px){ .gl-chips{grid-template-columns:minmax(0,1fr)} }
 /* S9 other areas */
 .ar-grid{--g:12px;display:flex;flex-wrap:wrap;justify-content:center;gap:var(--g)}
 .ar-tag{flex:0 0 calc((100% - (var(--c) - 1) * var(--g)) / var(--c));min-width:0;box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:10px;padding:16px 12px;background:var(--paper);color:var(--ink);text-decoration:none;font:700 15px var(--sans);border:1px solid rgba(29,26,23,.12);box-shadow:0 14px 26px -22px rgba(20,18,16,.6)}
@@ -987,9 +1036,6 @@ html.modal-open{overflow:hidden}
   .pc-back .pc-stamp{top:auto;bottom:6%;right:6%;width:48px}
 }
 @media (prefers-reduced-motion:reduce){ .pc{transition:none} }
-.ab3 .btn-call{color:var(--primer);border-color:rgba(242,237,228,.6)}
-.ab3 .btn-call:hover{background:var(--primer);color:var(--ink)}
-.ab3 .eyebrow{color:var(--brass)}
 </style>
 </head>
 <body>
@@ -1160,18 +1206,26 @@ html.modal-open{overflow:hidden}
   <g fill="#F2EDE4"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
 </svg>
 
-<!-- ===== S7. ALL ABOUT THE TOWN ===== -->
-<section class="ab ab1" aria-labelledby="ab-h">
-  <div class="wrap ab-grid">
-    <figure class="ab-img rv"><span class="tape t1" aria-hidden="true"></span><span class="tape t2" aria-hidden="true"></span><img src="https://images.pexels.com/photos/33599637/pexels-photo-33599637.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="The Old Louisiana State Capitol, a white Gothic Revival building with towers, in Baton Rouge" loading="lazy" width="1000" height="750"></figure>
-    <div class="ab-copy rv">
-      <span class="eyebrow">All About Baton Rouge</span>
-      <h2 id="ab-h">About <em>Baton&nbsp;Rouge</em></h2>
-      <p class="ab-lede">Baton Rouge is the capital of Louisiana and the parish seat of East Baton Rouge Parish. It sits on the east bank of the Mississippi River, about 79 miles from New Orleans, and had 227,470 residents at the 2020 census.</p>
-      <p class="ab-kv"><b>Parish:</b> East Baton Rouge Parish</p>
-      <p class="ab-kv"><b>Landmarks:</b> Louisiana State Capitol, Old Louisiana State Capitol, LSU Campus Mounds, Magnolia Mound Plantation House</p>
-      <a class="ab-maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Baton+Rouge%2C+LA" target="_blank" rel="noopener">View Baton Rouge on Google Maps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-      <div class="cta-row "><a class="btn btn-coral" href="#estimate" data-open-estimate>Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-call" href="tel:+15046082155"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Call 504-608-2155</a></div>
+<!-- ===== S7. ALL ABOUT THE TOWN (gallery) ===== -->
+<section class="ab ab1 gl" aria-labelledby="gl-h">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="gl-paint" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".022" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="eyebrow">All About Baton Rouge</span>
+        <h2 id="gl-h">Baton&nbsp;Rouge, in <em>Full&#160;Color</em></h2>
+      </div>
+      <p>Baton Rouge is the capital of Louisiana and the parish seat of East Baton Rouge Parish. It sits on the east bank of the Mississippi River, about 79 miles from New Orleans, and had 227,470 residents at the 2020 census.</p>
+    </div>
+    <ul class="gl-chips rv"><li class="gl-chip" style="--sw:#4E2E73"><span class="gl-chip-sw" aria-hidden="true"></span><span class="gl-chip-k">Parish</span><b>East Baton Rouge</b></li><li class="gl-chip" style="--sw:#C99A22"><span class="gl-chip-sw" aria-hidden="true"></span><span class="gl-chip-k">Population</span><b>227,470 at the 2020 census</b></li><li class="gl-chip" style="--sw:#3E5C7A"><span class="gl-chip-sw" aria-hidden="true"></span><span class="gl-chip-k">On the River</span><b>East bank of the Mississippi</b></li><li class="gl-chip" style="--sw:#6E2B2B"><span class="gl-chip-sw" aria-hidden="true"></span><span class="gl-chip-k">From New Orleans</span><b>About 79 miles</b></li></ul>
+    <div class="gl-wall">
+      <figure class="gl-frame gl-big rv"><span class="gl-canvas"><img src="https://images.pexels.com/photos/6304348/pexels-photo-6304348.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sunset over the water in Baton Rouge, with a bare tree in silhouette" loading="lazy" width="900" height="600"></span><figcaption class="gl-plaque"><b>Evening on the Water</b><span>Baton Rouge, Louisiana</span></figcaption></figure>
+      <div class="gl-exhibits rv">
+        <h3 class="gl-sub">Things to Do in&#160;Baton&nbsp;Rouge</h3>
+        <ol class="gl-cards"><li class="gl-card"><span class="gl-card-no">No. 01</span><h3>BREC's Bluebonnet Swamp Nature&#160;Center</h3><p>A 103-acre nature park with boardwalks and gravel trails through cypress-tupelo swamp and hardwood forest.</p></li><li class="gl-card"><span class="gl-card-no">No. 02</span><h3>BREC's Baton&nbsp;Rouge&#160;Zoo</h3><p>Run by BREC, the Recreation and Park Commission for the Parish of East Baton Rouge, and home to animals from around the world.</p></li><li class="gl-card"><span class="gl-card-no">No. 03</span><h3>Magnolia Mound Plantation&#160;House</h3><p>A French Creole house from the late 1700s near the Mississippi River, with historic outbuildings and a period crop garden.</p></li></ol>
+        <p class="gl-land"><b>Landmarks</b> Louisiana State Capitol, Old Louisiana State Capitol, LSU Campus Mounds, Magnolia Mound Plantation House</p>
+        <a class="gl-maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Baton+Rouge%2C+LA" target="_blank" rel="noopener">View Baton Rouge on Google Maps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
     </div>
   </div>
 </section>
@@ -1181,16 +1235,21 @@ html.modal-open{overflow:hidden}
   <g fill="#ECE4D6"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
 </svg>
 
-<section class="ab ab2" aria-labelledby="todo-h">
-  <div class="wrap ab-grid">
-    <div class="ab-copy rv">
-      <h2 id="todo-h">Things to Do <em>in&#160;Baton&nbsp;Rouge</em></h2>
-      <ul class="ab-chk"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>BREC's Bluebonnet Swamp Nature Center:</b> A 103-acre nature park with boardwalks and gravel trails through cypress-tupelo swamp and hardwood forest.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>BREC's Baton Rouge Zoo:</b> Run by BREC, the Recreation and Park Commission for the Parish of East Baton Rouge, and home to animals from around the world.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Magnolia Mound Plantation House:</b> A French Creole house from the late 1700s near the Mississippi River, with historic outbuildings and a period crop garden.</span></li></ul>
-      <h3 class="ab-h3">Notable Residents</h3>
-      <ul class="ab-chk"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Odell Beckham Jr.:</b> NFL wide receiver, born in Baton Rouge, who played college football at LSU.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Randy Jackson:</b> Musician and record producer, born in Baton Rouge, and the longest-serving judge on American Idol.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Don Lemon:</b> Television journalist and longtime CNN anchor, born in Baton Rouge.</span></li></ul>
-      <div class="cta-row "><a class="btn btn-coral" href="#estimate" data-open-estimate>Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-call" href="tel:+15046082155"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Call 504-608-2155</a></div>
+<section class="ab ab2 gl" aria-labelledby="gl-h2">
+  <div class="wrap">
+    <div class="gl-two">
+      <div class="gl-people">
+        <span class="eyebrow">Hometown Names</span>
+        <h2 id="gl-h2">Notable <em>Residents</em></h2>
+        <ul class="gl-portraits"><li class="gl-portrait rv"><span class="gl-oval" style="--pc:#4E2E73" aria-hidden="true"><i>OB</i></span><h3>Odell Beckham&#160;Jr.</h3><p>NFL wide receiver, born in Baton Rouge, who played college football at LSU.</p></li><li class="gl-portrait rv"><span class="gl-oval" style="--pc:#C99A22" aria-hidden="true"><i>RJ</i></span><h3>Randy Jackson</h3><p>Musician and record producer, born in Baton Rouge, and the longest-serving judge on American Idol.</p></li><li class="gl-portrait rv"><span class="gl-oval" style="--pc:#4E2E73" aria-hidden="true"><i>DL</i></span><h3>Don Lemon</h3><p>Television journalist and longtime CNN anchor, born in Baton Rouge.</p></li></ul>
+      </div>
+      <div class="gl-book rv">
+        <span class="gl-book-tab">Artist's Notes</span>
+        <h2>Fun Facts About&#160;Baton&nbsp;Rouge</h2>
+        <ol class="gl-notes"><li><span class="gl-note-no" aria-hidden="true">1</span>The Louisiana State Capitol stands 450 feet tall with 34 floors, making it the tallest state capitol in the U.S.</li><li><span class="gl-note-no" aria-hidden="true">2</span>A 2022 LSU-led study dated the start of the LSU Campus Mounds to about 11,000 years ago, among the oldest known human-made structures in the Americas.</li><li><span class="gl-note-no" aria-hidden="true">3</span>The Old State Capitol, a Gothic Revival building begun in 1847, is a National Historic Landmark and now houses the Museum of Political History.</li></ol>
+      </div>
     </div>
-    <figure class="ab-img rv"><span class="tape t1" aria-hidden="true"></span><span class="tape t2" aria-hidden="true"></span><img src="https://images.pexels.com/photos/7020111/pexels-photo-7020111.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bike path lined with live oak trees in Baton Rouge" loading="lazy" width="1000" height="750"></figure>
+    <div class="cta-row center"><a class="btn btn-coral" href="#estimate" data-open-estimate>Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-call" href="tel:+15046082155"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Call 504-608-2155</a></div>
   </div>
 </section>
 
@@ -1199,17 +1258,20 @@ html.modal-open{overflow:hidden}
   <g fill="#F2EDE4"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
 </svg>
 
-<section class="ab ab3" aria-labelledby="ff-h">
-  <div class="wrap ab-grid">
-    <div class="ab-map rv"><iframe title="Map of Baton Rouge, Louisiana" src="https://maps.google.com/maps?q=Baton+Rouge%2C+LA&amp;z=12&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-    <div class="ab-copy rv">
-      <h2 id="ff-h">Fun Facts <em>About&#160;Baton&nbsp;Rouge</em></h2>
-      <ul class="ab-chk"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>The Louisiana State Capitol stands 450 feet tall with 34 floors, making it the tallest state capitol in the U.S.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>A 2022 LSU-led study dated the start of the LSU Campus Mounds to about 11,000 years ago, among the oldest known human-made structures in the Americas.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>The Old State Capitol, a Gothic Revival building begun in 1847, is a National Historic Landmark and now houses the Museum of Political History.</span></li></ul>
-      <h3 class="ab-h3">Nearby Communities</h3>
-      <ul class="ab-chk ab-chk2"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Baker</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Central</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Zachary</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Denham Springs</span></li></ul>
-      <h3 class="ab-h3">Driving Directions</h3>
-      <ul class="ab-chk"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>From New Orleans:</b> Take I-10 West for about 80 miles into Baton Rouge.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>From Hammond:</b> Take I-12 West into Baton Rouge.</span></li></ul>
-      <p class="ab-kv"><b>Public transit:</b> The Capital Area Transit System (CATS) runs bus routes across East Baton Rouge Parish, including service to LSU, Southern University, and Baton Rouge Community College.</p>
+<section class="ab ab3 gl" aria-labelledby="gl-h3">
+  <div class="wrap gl-go">
+    <div class="gl-go-art">
+      <svg class="gl-route" viewBox="0 0 520 220" role="img" aria-labelledby="gl-route-t"><title id="gl-route-t">Route from New Orleans to Baton Rouge</title><path class="gl-stroke" d="M470 170 C400 190 360 120 300 130 S180 80 120 70 S60 60 48 52"/><path class="gl-stroke2" d="M470 170 C400 190 360 120 300 130 S180 80 120 70 S60 60 48 52"/><circle cx="470" cy="170" r="11" class="gl-dot"/><circle cx="48" cy="52" r="14" class="gl-dot gl-dot-to"/><text x="500" y="204" text-anchor="end" class="gl-t">New Orleans</text><text x="40" y="96" text-anchor="start" class="gl-t gl-t-to">Baton Rouge</text><text x="350" y="62" text-anchor="middle" class="gl-hw">I-10 WEST, ABOUT 80 MILES</text></svg>
+      <figure class="gl-frame gl-small rv"><span class="gl-canvas"><img src="https://images.pexels.com/photos/39026428/pexels-photo-39026428.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Steel truss bridge over a wide river at sunset" loading="lazy" width="900" height="600"></span><figcaption class="gl-plaque"><b>Crossing the River</b><span>Along the Way</span></figcaption></figure>
+    </div>
+    <div class="gl-go-copy rv">
+      <span class="eyebrow">Getting Here</span>
+      <h2 id="gl-h3">Painting Our Way to&#160;<em>Baton&nbsp;Rouge</em></h2>
+      <ul class="gl-dirs"><li><b>From New Orleans</b><span>Take I-10 West for about 80 miles into Baton Rouge.</span></li><li><b>From Hammond</b><span>Take I-12 West into Baton Rouge.</span></li></ul>
+      <h3 class="gl-sub">Nearby Communities</h3>
+      <ul class="gl-nears"><li><span class="gl-near">Baker</span></li><li><span class="gl-near">Central</span></li><li><span class="gl-near">Zachary</span></li><li><span class="gl-near">Denham Springs</span></li></ul>
+      <p class="gl-transit"><b>Public Transit</b> The Capital Area Transit System (CATS) runs bus routes across East Baton Rouge Parish, including service to LSU, Southern University, and Baton Rouge Community College.</p>
+      <a class="gl-maplink" href="https://www.google.com/maps/dir/?api=1&amp;origin=New+Orleans%2C+LA&amp;destination=Baton+Rouge%2C+LA" target="_blank" rel="noopener">Get Directions on Google Maps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
       <div class="cta-row "><a class="btn btn-coral" href="#estimate" data-open-estimate>Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-call" href="tel:+15046082155"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Call 504-608-2155</a></div>
     </div>
   </div>
