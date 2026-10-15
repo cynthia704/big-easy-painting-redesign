@@ -788,7 +788,7 @@ html.modal-open{overflow:hidden}
 .plan-living{grid-area:living}.plan-dining{grid-area:dining}.plan-kitchen{grid-area:kitchen}.plan-bedroom{grid-area:bedroom}.plan-bath{grid-area:bath}.plan-nursery{grid-area:nursery}
 .plan-office{grid-area:office}
 .plan-room{position:relative;margin:0;border:3px solid #1D1A17;background:repeating-linear-gradient(45deg,rgba(29,26,23,.035) 0 2px,transparent 2px 12px),#FBF8F2;cursor:pointer;
-  font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#1D1A17;display:flex;align-items:flex-end;justify-content:flex-start;padding:14px;transition:background-color .25s}
+  font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#1D1A17;display:flex;align-items:flex-end;justify-content:flex-start;padding:14px}
 .plan-room span{background:rgba(251,248,242,.88);padding:4px 8px}
 .plan-room:hover{background-color:#F1EADD}
 .plan-room.painted{background:linear-gradient(135deg,rgba(255,255,255,.18),rgba(0,0,0,.08)),var(--wet)}
@@ -813,7 +813,7 @@ html.modal-open{overflow:hidden}
 .proc .eyebrow{color:var(--brass)}
 .proc .eyebrow::before{background:var(--brass)}
 .proc-head h2{font-size:clamp(36px,4.4vw,60px);color:var(--primer);margin:0 0 clamp(36px,4vw,56px)}
-.roller{position:relative;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.4vw,32px)}
+.roller{position:relative;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(var(--n,4),minmax(0,1fr));gap:clamp(18px,2.4vw,32px)}
 .roller-line{position:absolute;left:0;right:0;top:12px;height:40px;pointer-events:none}
 .roller-line svg{width:100%;height:100%;overflow:visible}
 .roller-line path{fill:none;stroke:var(--brass);stroke-width:18;stroke-linecap:round;opacity:.85}
@@ -824,9 +824,10 @@ html.modal-open{overflow:hidden}
 .st-step p{margin:0;color:#DCD4C7;font-size:15.5px}
 .incl{margin-top:clamp(40px,5vw,64px);padding:clamp(22px,3vw,34px);border:1px solid rgba(242,237,228,.18);background:rgba(20,18,16,.5)}
 .incl h3{font-size:clamp(26px,2.4vw,34px);color:var(--primer);margin:0 0 16px}
-.incl ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
-.incl li{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;background:rgba(242,237,228,.08);border:1px solid rgba(201,163,91,.35);font-size:15px;color:#EFE9DE}
-.incl li::before{content:"";width:8px;height:8px;background:var(--brass);transform:rotate(45deg)}
+.incl h3{text-align:center}
+.incl ul{--g:10px;list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:var(--g)}
+.incl li{flex:0 0 calc((100% - (var(--c,4) - 1) * var(--g)) / var(--c,4));min-width:0;box-sizing:border-box;display:flex;align-items:center;gap:10px;padding:12px 16px;background:rgba(242,237,228,.08);border:1px solid rgba(201,163,91,.35);font-size:15px;color:#EFE9DE}
+.incl li::before{flex:none;content:"";width:8px;height:8px;background:var(--brass);transform:rotate(45deg)}
 
 /* S6 guide (Interior): oil vs latex, popular colors */
 .guide{padding:clamp(70px,9vw,120px) 0;background:repeating-linear-gradient(0deg,rgba(29,26,23,.022) 0 1px,transparent 1px 4px),var(--primer)}
@@ -865,7 +866,8 @@ html.modal-open{overflow:hidden}
 .rel{padding:clamp(70px,8vw,110px) 0;background:var(--cloth)}
 .rel-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(28px,3vw,44px)}
 .rel-head h2{font-size:clamp(34px,4vw,54px);margin:0}
-.rel-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.rel-grid{--c:5;--g:16px;display:flex;flex-wrap:wrap;justify-content:center;gap:var(--g)}
+.rel-grid>*{flex:0 0 calc((100% - (var(--c) - 1) * var(--g)) / var(--c));min-width:0;box-sizing:border-box}
 .rel-card{position:relative;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper);box-shadow:0 16px 30px -24px rgba(20,18,16,.6);transition:transform .3s cubic-bezier(.2,.8,.2,1)}
 .rel-card:hover{transform:translateY(-5px)}
 .rel-img{display:block;aspect-ratio:4/3;overflow:hidden}
@@ -875,15 +877,18 @@ html.modal-open{overflow:hidden}
 .rel-card h3{font-size:21px;line-height:1.15;margin:0;padding:22px 16px 18px}
 .rel-card:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
 
-@media (max-width:1080px){ .rel-grid{grid-template-columns:repeat(3,1fr)} .plan-grid{grid-template-columns:1fr} .roller{grid-template-columns:1fr 1fr;row-gap:36px} .roller-line{display:none} .st-step{padding-top:66px} }
+@media (max-width:1080px){ .rel-grid{--c:3} .plan-grid{grid-template-columns:1fr} .roller{grid-template-columns:1fr 1fr;row-gap:36px} .roller-line{display:none} .st-step{padding-top:66px} }
 @media (max-width:900px){ .ph-bg::after{background:linear-gradient(180deg,rgba(20,18,16,.9),rgba(20,18,16,.82))} .over-grid,.cost-grid,.pop{grid-template-columns:1fr} .vs{grid-template-columns:1fr} .vs-badge{justify-self:center} }
 @media (max-width:620px){
   .ph{min-height:0;padding:36px 0 42px} .ph .btn-d.line{display:none}
-  .over-promises{grid-template-columns:1fr} .roller{grid-template-columns:1fr} .rel-grid{grid-template-columns:1fr 1fr}
+  .over-promises{grid-template-columns:1fr} .roller{grid-template-columns:1fr} .rel-grid{--c:2}
   .plan{aspect-ratio:auto;grid-template-columns:1fr 1fr;grid-template-rows:120px repeat(3,96px);grid-template-areas:"living living" "dining kitchen" "bedroom office" "bath nursery"}
   .plan-room{padding:10px;font-size:10.5px} .pop-chips{gap:8px} .pop-chips span{font-size:10px;letter-spacing:.08em;padding:5px 6px}
   .vs-col dl div{grid-template-columns:1fr;gap:2px}
 }
+
+@media (max-width:900px){ .incl ul{--c:2 !important} }
+@media (max-width:620px){ .incl ul{--c:1 !important} }
 </style>
 </head>
 <body>
@@ -961,7 +966,7 @@ html.modal-open{overflow:hidden}
     </div>
     <figure class="over-photo rv">
       <span class="tape t1" aria-hidden="true"></span><span class="tape t2" aria-hidden="true"></span>
-      <img src="https://www.bigeasypainting.com/wp-content/uploads/2022/08/Gretna-House-Painting-1000x500.jpg" alt="Living room mid-repaint with an orange accent wall, drop cloths, and a stepladder" loading="lazy" width="1000" height="500">
+      <img src="https://www.bigeasypainting.com/wp-content/uploads/2022/08/Gretna-House-Painting-1000x500.jpg" alt="Living room mid-repaint with an orange accent wall, drop cloths, and a stepladder" loading="lazy" width="1000" height="667">
     </figure>
   </div>
 </section>
@@ -1001,7 +1006,7 @@ html.modal-open{overflow:hidden}
   <g fill="#ECE4D6"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
 </svg>
 
-<!-- ===== S5. INCLUDED + PROCESS ===== -->
+<!-- ===== S5. PROCESS + INCLUDED ===== -->
 <section class="proc">
   <div class="proc-bg" aria-hidden="true"></div>
   <div class="wrap proc-inner">
@@ -1009,13 +1014,13 @@ html.modal-open{overflow:hidden}
       <span class="eyebrow">How It Works</span>
       <h2>Our Interior Home Painting Process</h2>
     </div>
-    <ol class="roller rv">
+    <ol class="roller rv" style="--n:4">
       <li class="roller-line" aria-hidden="true"><svg viewBox="0 0 1000 40" preserveAspectRatio="none"><path d="M0 22 C120 8 220 30 340 18 S560 6 680 20 S880 30 1000 14" /></svg><span class="roller-head"></span></li>
       <li class="st-step"><span class="st-dot" aria-hidden="true">1</span><h3>Choose Together</h3><p>We help you pick the color and design, with swatches to see it first.</p></li><li class="st-step"><span class="st-dot" aria-hidden="true">2</span><h3>Prep the Room</h3><p>We move furniture and protect your floors before any paint opens.</p></li><li class="st-step"><span class="st-dot" aria-hidden="true">3</span><h3>Paint With Care</h3><p>Walls, ceilings, baseboards, and trim, without streaks or drips.</p></li><li class="st-step"><span class="st-dot" aria-hidden="true">4</span><h3>Put It Back</h3><p>Everything goes back in its place, and we clean up every area we used.</p></li>
     </ol>
     <div class="incl rv">
       <h3>What's Included</h3>
-      <ul><li>Paint and color consultation</li><li>Walls and ceilings</li><li>Baseboards and trim</li><li>Doors and windows</li><li>Furniture moved and floors protected</li><li>Touch-ups and small repairs</li><li>Full cleanup when we finish</li></ul>
+      <ul style="--c:4"><li>Paint and color consultation</li><li>Walls and ceilings</li><li>Baseboards and trim</li><li>Doors and windows</li><li>Furniture moved and floors protected</li><li>Touch-ups and small repairs</li><li>Full cleanup when we finish</li></ul>
     </div>
   </div>
 </section>
@@ -1077,7 +1082,7 @@ html.modal-open{overflow:hidden}
   <g fill="#F2EDE4"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
 </svg>
 
-<!-- ===== S7. WHAT SHAPES YOUR ESTIMATE ===== -->
+<!-- ===== S7. WHAT SHAPES THE PRICE ===== -->
 <section class="cost">
   <div class="wrap cost-grid">
     <div class="cost-copy rv">
@@ -1139,7 +1144,7 @@ html.modal-open{overflow:hidden}
   <g fill="#F2EDE4"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
 </svg>
 
-<!-- ===== S9. RELATED SERVICES ===== -->
+<!-- ===== S9. OTHER RESIDENTIAL SERVICES ===== -->
 <section class="rel">
   <div class="wrap">
     <div class="rel-head rv">
@@ -1149,7 +1154,7 @@ html.modal-open{overflow:hidden}
       </div>
       <a class="btn btn-ghost" href="residential.html">All Residential Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
-    <div class="rel-grid rv"><a class="rel-card" href="https://www.bigeasypainting.com/residential/exterior-home-painting/"><span class="rel-img"><img src="https://www.bigeasypainting.com/wp-content/uploads/2023/06/our-projects-image3-1024x768.jpg" alt="Brick home exterior mid-repaint by Big Easy Painting, windows masked off" loading="lazy" width="700" height="467"></span><span class="rel-ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22 24 8l18 14"/><path d="M11 19v21h26V19"/><rect x="20" y="28" width="8" height="12"/></svg></span><h3>Exterior Home Painting</h3></a><a class="rel-card" href="https://www.bigeasypainting.com/residential/cabinet-painting/"><span class="rel-img"><img src="https://images.pexels.com/photos/94865/pexels-photo-94865.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="White painted kitchen cabinets with under-cabinet lighting" loading="lazy" width="700" height="467"></span><span class="rel-ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="10" width="32" height="28" rx="2"/><path d="M24 10v28M19 22v4M29 22v4"/></svg></span><h3>Cabinet Painting</h3></a><a class="rel-card" href="https://www.bigeasypainting.com/residential/deck-staining-painting/"><span class="rel-img"><img src="https://images.pexels.com/photos/15869198/pexels-photo-15869198.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="Weathered wood boards partly covered with fresh stain" loading="lazy" width="700" height="467"></span><span class="rel-ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 20h36M6 28h36M6 36h36M12 20v20M36 20v20M12 20V10M36 20V10"/></svg></span><h3>Deck Staining &amp; Painting</h3></a><a class="rel-card" href="https://www.bigeasypainting.com/residential/kitchen-remodel/"><span class="rel-img"><img src="https://images.pexels.com/photos/7601088/pexels-photo-7601088.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="Bright finished kitchen with white cabinets" loading="lazy" width="700" height="467"></span><span class="rel-ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="22" width="32" height="18" rx="2"/><path d="M8 30h32M17 12h14l-2 10H19z"/></svg></span><h3>Kitchen Remodel</h3></a><a class="rel-card" href="https://www.bigeasypainting.com/residential/pressure-washing/"><span class="rel-img"><img src="https://images.pexels.com/photos/5652626/pexels-photo-5652626.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="Worker pressure washing the siding of a house" loading="lazy" width="700" height="467"></span><span class="rel-ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 30h14l4-6h8M34 24l6-4M34 24l6 0M34 24l6 4"/><rect x="8" y="26" width="8" height="12" rx="2"/></svg></span><h3>Pressure Washing</h3></a></div>
+    <div class="rel-grid rv"><a class="rel-card" href="exterior-home-painting.html"><span class="rel-img"><img src="https://www.bigeasypainting.com/wp-content/uploads/2023/06/our-projects-image3-1024x768.jpg" alt="Brick home exterior mid-repaint by Big Easy Painting, windows masked off" loading="lazy" width="700" height="467"></span><span class="rel-ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22 24 8l18 14"/><path d="M11 19v21h26V19"/><rect x="20" y="28" width="8" height="12"/></svg></span><h3>Exterior Home Painting</h3></a><a class="rel-card" href="cabinet-painting.html"><span class="rel-img"><img src="https://images.pexels.com/photos/94865/pexels-photo-94865.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="White painted kitchen cabinets with under-cabinet lighting" loading="lazy" width="700" height="467"></span><span class="rel-ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="10" width="32" height="28" rx="2"/><path d="M24 10v28M19 22v4M29 22v4"/></svg></span><h3>Cabinet Painting</h3></a><a class="rel-card" href="deck-staining-painting.html"><span class="rel-img"><img src="https://images.pexels.com/photos/15869198/pexels-photo-15869198.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="Weathered wood boards partly covered with fresh stain" loading="lazy" width="700" height="467"></span><span class="rel-ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 20h36M6 28h36M6 36h36M12 20v20M36 20v20M12 20V10M36 20V10"/></svg></span><h3>Deck Staining &amp; Painting</h3></a><a class="rel-card" href="kitchen-remodel.html"><span class="rel-img"><img src="https://images.pexels.com/photos/7601088/pexels-photo-7601088.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="Bright finished kitchen with white cabinets" loading="lazy" width="700" height="467"></span><span class="rel-ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="22" width="32" height="18" rx="2"/><path d="M8 30h32M17 12h14l-2 10H19z"/></svg></span><h3>Kitchen Remodel</h3></a><a class="rel-card" href="pressure-washing.html"><span class="rel-img"><img src="https://images.pexels.com/photos/5652626/pexels-photo-5652626.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="Worker pressure washing the siding of a house" loading="lazy" width="700" height="467"></span><span class="rel-ic"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 30h14l4-6h8M34 24l6-4M34 24l6 0M34 24l6 4"/><rect x="8" y="26" width="8" height="12" rx="2"/></svg></span><h3>Pressure Washing</h3></a></div>
   </div>
 </section>
 
@@ -1225,11 +1230,11 @@ html.modal-open{overflow:hidden}
         <h4>Residential</h4>
         <ul>
           <li><a href="interior-home-painting.html">Interior Home Painting</a></li>
-          <li><a href="https://www.bigeasypainting.com/residential/exterior-home-painting/">Exterior Home Painting</a></li>
-          <li><a href="https://www.bigeasypainting.com/residential/cabinet-painting/">Cabinet Painting</a></li>
-          <li><a href="https://www.bigeasypainting.com/residential/deck-staining-painting/">Deck Staining &amp; Painting</a></li>
-          <li><a href="https://www.bigeasypainting.com/residential/kitchen-remodel/">Kitchen Remodel</a></li>
-          <li><a href="https://www.bigeasypainting.com/residential/pressure-washing/">Pressure Washing</a></li>
+          <li><a href="exterior-home-painting.html">Exterior Home Painting</a></li>
+          <li><a href="cabinet-painting.html">Cabinet Painting</a></li>
+          <li><a href="deck-staining-painting.html">Deck Staining &amp; Painting</a></li>
+          <li><a href="kitchen-remodel.html">Kitchen Remodel</a></li>
+          <li><a href="pressure-washing.html">Pressure Washing</a></li>
         </ul>
       </div>
       <div>
