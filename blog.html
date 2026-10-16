@@ -810,7 +810,8 @@ html.modal-open{overflow:hidden}
 .bf-chip[aria-pressed="true"] b{color:var(--brass-2)}
 .bf-chip:focus-visible,.bc:focus-visible,.bl-more:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
 .bl-count{margin:0 0 22px;font:600 13px var(--sans);letter-spacing:.06em;color:var(--stone)}
-.bl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.4vw,32px)}
+.bl-grid{--g:clamp(20px,2.4vw,32px);--cols:3;display:flex;flex-wrap:wrap;justify-content:center;gap:var(--g)}
+.bl-grid>.bc{flex:0 0 calc((100% - (var(--cols) - 1) * var(--g)) / var(--cols));min-width:0}
 .bc{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper);box-shadow:0 18px 36px -28px rgba(20,18,16,.6);transition:transform .3s cubic-bezier(.2,.8,.2,1)}
 .bc[hidden]{display:none}
 .bc:hover{transform:translateY(-5px)}
@@ -835,9 +836,9 @@ html.modal-open{overflow:hidden}
 .ask p{color:#DCD4C7;font-size:17px;margin:0 auto 28px;max-width:560px}
 .ask .cta-row{justify-content:center}
 
-@media (max-width:1080px){ .bl-grid{grid-template-columns:repeat(2,1fr)} .ft-grid{grid-template-columns:1fr} }
+@media (max-width:1080px){ .bl-grid{--cols:2} .ft-grid{grid-template-columns:1fr} }
 @media (max-width:900px){ .ph h1{white-space:normal} .ph-bg::after{background:linear-gradient(180deg,rgba(20,18,16,.9),rgba(20,18,16,.82))} }
-@media (max-width:620px){ .ph{min-height:0;padding:36px 0 42px} .ph .btn-d.line{display:none} .bl-grid{grid-template-columns:1fr} .ft-side{flex-direction:column} .ft-side .ft-media{flex:none;aspect-ratio:16/10} .bl-search{min-width:100%} .bf{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px;scroll-snap-type:x proximity} .bf::-webkit-scrollbar{display:none} .bf-chip{flex:none;scroll-snap-align:start} }
+@media (max-width:620px){ .ph{min-height:0;padding:36px 0 42px} .ph .btn-d.line{display:none} .bl-grid{--cols:1} .ft-side{flex-direction:column} .ft-side .ft-media{flex:none;aspect-ratio:16/10} .bl-search{min-width:100%} .bf{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px;scroll-snap-type:x proximity} .bf::-webkit-scrollbar{display:none} .bf-chip{flex:none;scroll-snap-align:start} }
 </style>
 </head>
 <body>
@@ -950,9 +951,24 @@ html.modal-open{overflow:hidden}
         <input id="blog-q" type="search" placeholder="Try cabinets, humidity, or trim" autocomplete="off">
       </div>
     </div>
-    <div class="bf" role="group" aria-label="Filter posts by topic"><button type="button" class="bf-chip" data-topic="all" aria-pressed="true"><i style="background:conic-gradient(#3E5C7A 0 60deg,#B9583A 0 120deg,#2F4A3A 0 180deg,#5E6B78 0 240deg,#C9A35B 0 300deg,#6E2B2B 0)"></i>All Posts <b>70</b></button><button type="button" class="bf-chip" data-topic="exterior" aria-pressed="false"><i style="background:#3E5C7A"></i>Exterior <b>12</b></button><button type="button" class="bf-chip" data-topic="color" aria-pressed="false"><i style="background:#B9583A"></i>Color &amp; Design <b>21</b></button><button type="button" class="bf-chip" data-topic="cabinets" aria-pressed="false"><i style="background:#2F4A3A"></i>Cabinets &amp; Kitchens <b>8</b></button><button type="button" class="bf-chip" data-topic="commercial" aria-pressed="false"><i style="background:#5E6B78"></i>Commercial <b>5</b></button><button type="button" class="bf-chip" data-topic="prep" aria-pressed="false"><i style="background:#C9A35B"></i>Prep, Products &amp; Care <b>14</b></button><button type="button" class="bf-chip" data-topic="planning" aria-pressed="false"><i style="background:#6E2B2B"></i>Hiring &amp; Planning <b>10</b></button></div>
+    <div class="bf" role="group" aria-label="Filter posts by topic"><button type="button" class="bf-chip" data-topic="all" aria-pressed="true"><i style="background:conic-gradient(#3E5C7A 0 60deg,#B9583A 0 120deg,#2F4A3A 0 180deg,#5E6B78 0 240deg,#C9A35B 0 300deg,#6E2B2B 0)"></i>All Posts <b>73</b></button><button type="button" class="bf-chip" data-topic="exterior" aria-pressed="false"><i style="background:#3E5C7A"></i>Exterior <b>13</b></button><button type="button" class="bf-chip" data-topic="color" aria-pressed="false"><i style="background:#B9583A"></i>Color &amp; Design <b>21</b></button><button type="button" class="bf-chip" data-topic="cabinets" aria-pressed="false"><i style="background:#2F4A3A"></i>Cabinets &amp; Kitchens <b>9</b></button><button type="button" class="bf-chip" data-topic="commercial" aria-pressed="false"><i style="background:#5E6B78"></i>Commercial <b>6</b></button><button type="button" class="bf-chip" data-topic="prep" aria-pressed="false"><i style="background:#C9A35B"></i>Prep, Products &amp; Care <b>14</b></button><button type="button" class="bf-chip" data-topic="planning" aria-pressed="false"><i style="background:#6E2B2B"></i>Hiring &amp; Planning <b>10</b></button></div>
     <p class="bl-count" aria-live="polite"></p>
     <div class="bl-grid">
+      <a class="bc" href="paint-medical-office-without-closing-new-orleans.html" data-topic="commercial">
+        <span class="bc-media"><img class="bc-img" src="https://www.bigeasypainting.com/wp-content/uploads/2025/04/commercial-space-interior-painting-456x289.jpeg" alt="commercial space interior painting" loading="lazy" width="456" height="289"><span class="tape-label" style="--t:#5E6B78">Commercial</span></span>
+        <h3>How to Paint a Medical Office Without Closing in New&nbsp;Orleans,&#160;LA</h3>
+        <span class="rs-more">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="bc" href="kitchen-remodel-what-it-involves-new-orleans.html" data-topic="cabinets">
+        <span class="bc-media"><img class="bc-img" src="https://www.bigeasypainting.com/wp-content/uploads/2023/06/beautiful-house-interior-design-456x289.jpg" alt="beautiful house interior design" loading="lazy" width="456" height="289"><span class="tape-label" style="--t:#2F4A3A">Cabinets & Kitchens</span></span>
+        <h3>What a Kitchen Remodel Involves in New&nbsp;Orleans,&#160;LA</h3>
+        <span class="rs-more">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="bc" href="painting-historic-home-rules-new-orleans.html" data-topic="exterior">
+        <span class="bc-media"><img class="bc-img" src="https://www.bigeasypainting.com/wp-content/uploads/2023/04/colorful-house-wall-456x289.jpg" alt="freshly painted house exterior" loading="lazy" width="456" height="289"><span class="tape-label" style="--t:#3E5C7A">Exterior</span></span>
+        <h3>Painting a Historic New&nbsp;Orleans Home: What the Rules&#160;Allow</h3>
+        <span class="rs-more">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
       <a class="bc" href="how-to-paint-raised-elevated-home-new-orleans.html" data-topic="exterior">
         <span class="bc-media"><img class="bc-img" src="https://www.bigeasypainting.com/wp-content/uploads/2023/06/our-projects-image2-1024x576.jpg" alt="Raised home with a fresh white exterior by Big Easy Painting" loading="lazy" width="456" height="289"><span class="tape-label" style="--t:#3E5C7A">Exterior</span></span>
         <h3>How to Paint a Raised or Elevated New&nbsp;Orleans&#160;Home</h3>
@@ -1421,7 +1437,7 @@ html.modal-open{overflow:hidden}
           <li>Mon to Fri, 8am to 5pm</li>
           <li>Sat and Sun, Closed</li>
           <li>New Orleans, LA</li>
-          <li><a href="https://www.bigeasypainting.com/contact/">Contact Page</a></li>
+          <li><a href="contact.html">Contact Page</a></li>
         </ul>
       </div>
     </div>
@@ -1747,7 +1763,7 @@ html.modal-open{overflow:hidden}
     blogCards.forEach(function(c){ c.hidden=true; });
     match.slice(0,shown).forEach(function(c){ c.hidden=false; });
     var n=Math.min(shown,match.length);
-    count.textContent = match.length ? ('Showing '+n+' of '+match.length+' posts') : '';
+    count.textContent = match.length ? ('Showing '+n+' of '+match.length+(match.length===1?' post':' posts')) : '';
     empty.hidden = match.length>0;
     more.parentNode.hidden = match.length<=shown;
   }
