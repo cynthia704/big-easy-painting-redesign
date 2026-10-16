@@ -897,6 +897,26 @@ html.modal-open{overflow:hidden}
 @media (max-width:1080px){ .rel-grid.n4{--c:2} }
 @media (max-width:620px){ .rel-grid.n4{--c:2} }
 
+/* S7B guide shelf: paint cans on a shelf, one per guide (rows full or centered) */
+.sg{position:relative;background:var(--black);color:var(--primer);padding:clamp(56px,6vw,90px) 0;overflow:hidden}
+.sg::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,16,.93),rgba(20,18,16,.86)),var(--bg) center/cover no-repeat}
+.sg .wrap{position:relative;z-index:1}
+.sg-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(40px,4vw,56px)}
+.sg-head .eyebrow{color:#B7AC9E}
+.sg-head h2{color:var(--primer);font-size:clamp(32px,3.6vw,52px);margin:0;text-wrap:balance}
+.sg-head p{max-width:420px;color:var(--stone-2);font-size:17px;margin:0}
+.sg-shelf{--g:22px;--k:var(--kd);display:flex;flex-wrap:wrap;justify-content:center;gap:40px var(--g);padding-bottom:22px;border-bottom:12px solid #8A6A3B;box-shadow:0 12px 0 -6px #5E4628}
+.sg-can{flex:0 0 calc((100% - (var(--k) - 1) * var(--g)) / var(--k));max-width:230px;min-width:0;position:relative;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:linear-gradient(90deg,#BFC3C7,#ECEEF0 30%,#C9CDD1 70%,#9EA3A8);border-radius:6px 6px 10px 10px;padding:26px 10px 14px;min-height:178px;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.sg-lid{position:absolute;left:-4px;right:-4px;top:-10px;height:18px;border-radius:50%;background:radial-gradient(ellipse at center,#ECEEF0 0 40%,#A7ACB1 41% 52%,#D7DADD 53%);box-shadow:0 2px 0 rgba(0,0,0,.18)}
+.sg-label{flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px;background:var(--paper);border-top:10px solid var(--c);padding:12px 12px 14px}
+.sg-label small{font:700 10.5px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--c)}
+.sg-label b{font:400 19px/1.15 var(--serif);text-wrap:balance}
+.sg-can:hover,.sg-can:focus-visible{transform:translateY(-8px) rotate(-1deg)}
+.sg-can:focus-visible{outline:3px solid var(--brass);outline-offset:4px}
+@media (max-width:1080px){ .sg-shelf{--k:var(--kt)} }
+@media (max-width:620px){ .sg-shelf{--k:var(--km)} .sg-can{max-width:none} }
+@media (prefers-reduced-motion:reduce){ .sg-can{transition:none} }
+
 .cab-stage{cursor:ew-resize;touch-action:pan-y;user-select:none;-webkit-user-select:none}
 /* Cabinet: finish slider signature */
 .cab-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,4vw,56px);align-items:center}
@@ -1125,9 +1145,25 @@ html.modal-open{overflow:hidden}
   </div>
 </section>
 
-<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#F2EDE4">
+<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#1D1A17">
   <rect y="-2" width="1440" height="16" fill="#ECE4D6"/>
   <g fill="#ECE4D6"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
+</svg>
+
+<!-- ===== S7B. GUIDE SHELF ===== -->
+<section class="sg" style="--bg:url('https://www.bigeasypainting.com/wp-content/uploads/2023/01/timeless-color-for-cabinet-painting-1024x682.jpg')">
+  <div class="wrap">
+    <div class="sg-head rv">
+      <div><span class="eyebrow">The Guide Shelf</span><h2>Cabinet Painting Guides From Our&#160;Crew</h2></div>
+      <p>Three short reads on the questions homeowners ask before a project starts. Pick a can.</p>
+    </div>
+    <div class="sg-shelf" style="--kd:3;--kt:3;--km:1"><a class="sg-can" href="cabinet-painting-pros-and-cons.html" style="--c:#6E2B2B"><span class="sg-lid" aria-hidden="true"></span><span class="sg-label"><small>Guide 01</small><b>The Pros and Cons of Painting Cabinets</b></span></a><a class="sg-can" href="cabinet-painting-timeless-color-kitchen-cabinets.html" style="--c:#3E5C7A"><span class="sg-lid" aria-hidden="true"></span><span class="sg-label"><small>Guide 02</small><b>Timeless Color for Kitchen Cabinets</b></span></a><a class="sg-can" href="cabinet-painting-type-of-paint-for-cabinets.html" style="--c:#C9A35B"><span class="sg-lid" aria-hidden="true"></span><span class="sg-label"><small>Guide 03</small><b>Type of Paint for Cabinets</b></span></a></div>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style="background:#F2EDE4">
+  <rect y="-2" width="1440" height="16" fill="#1D1A17"/>
+  <g fill="#1D1A17"><rect x="160" y="4" width="17" height="30" rx="8.5"/><rect x="340" y="4" width="14" height="46" rx="7"/><rect x="520" y="4" width="17" height="20" rx="8.5"/><rect x="720" y="4" width="14" height="42" rx="7"/><rect x="900" y="4" width="17" height="24" rx="8.5"/><rect x="1080" y="4" width="14" height="50" rx="7"/><rect x="1260" y="4" width="17" height="26" rx="8.5"/></g>
 </svg>
 
 <!-- ===== S8. FAQ ===== -->
